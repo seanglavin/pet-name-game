@@ -1,0 +1,699 @@
+{
+    "animals": [
+      {
+        "id": 70321157,
+        "organization_id": "MO286",
+        "url": "https://www.petfinder.com/cat/sparklers-c-70321157/il/east-saint-louis/gateway-pet-guardians-mo286/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+        "type": "Cat",
+        "species": "Cat",
+        "breeds": {
+          "primary": "Domestic Short Hair",
+          "secondary": null,
+          "mixed": false,
+          "unknown": false
+        },
+        "colors": {
+          "primary": "Buff / Tan / Fawn",
+          "secondary": null,
+          "tertiary": null
+        },
+        "age": "Adult",
+        "gender": "Female",
+        "size": "Small",
+        "coat": null,
+        "attributes": {
+          "spayed_neutered": true,
+          "house_trained": false,
+          "declawed": false,
+          "special_needs": false,
+          "shots_current": true
+        },
+        "environment": {
+          "children": null,
+          "dogs": null,
+          "cats": true
+        },
+        "tags": [
+          "Good with cats"
+        ],
+        "name": "Sparklers-C",
+        "description": "FOR FIRST 60 ADULT CATS TO BE ADOPTED:\nThis cat is $0 to adopt thanks to a thoughtful sponsorship in...",
+        "organization_animal_id": "GPG-A-5911",
+        "photos": [],
+        "primary_photo_cropped": null,
+        "videos": [],
+        "status": "adoptable",
+        "status_changed_at": "2024-01-10T23:31:07+0000",
+        "published_at": "2024-01-10T23:31:06+0000",
+        "distance": null,
+        "contact": {
+          "email": "adopt@gatewaypets.org",
+          "phone": null,
+          "address": {
+            "address1": null,
+            "address2": null,
+            "city": "East Saint Louis",
+            "state": "IL",
+            "postcode": "62205",
+            "country": "US"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "/v2/animals/70321157"
+          },
+          "type": {
+            "href": "/v2/types/cat"
+          },
+          "organization": {
+            "href": "/v2/organizations/mo286"
+          }
+        }
+      },
+      {
+        "id": 70321158,
+        "organization_id": "MO286",
+        "url": "https://www.petfinder.com/cat/socket-c-70321158/il/east-saint-louis/gateway-pet-guardians-mo286/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+        "type": "Cat",
+        "species": "Cat",
+        "breeds": {
+          "primary": "Domestic Short Hair",
+          "secondary": null,
+          "mixed": false,
+          "unknown": false
+        },
+        "colors": {
+          "primary": "Black & White / Tuxedo",
+          "secondary": null,
+          "tertiary": null
+        },
+        "age": "Adult",
+        "gender": "Female",
+        "size": "Small",
+        "coat": null,
+        "attributes": {
+          "spayed_neutered": true,
+          "house_trained": false,
+          "declawed": false,
+          "special_needs": false,
+          "shots_current": true
+        },
+        "environment": {
+          "children": null,
+          "dogs": null,
+          "cats": true
+        },
+        "tags": [
+          "Good with cats"
+        ],
+        "name": "Socket-C",
+        "description": "FOR FIRST 60 ADULT CATS TO BE ADOPTED:\nThis cat is $0 to adopt thanks to a thoughtful sponsorship in...",
+        "organization_animal_id": "GPG-A-5910",
+        "photos": [],
+        "primary_photo_cropped": null,
+        "videos": [],
+        "status": "adoptable",
+        "status_changed_at": "2024-01-10T23:31:07+0000",
+        "published_at": "2024-01-10T23:31:06+0000",
+        "distance": null,
+        "contact": {
+          "email": "adopt@gatewaypets.org",
+          "phone": null,
+          "address": {
+            "address1": null,
+            "address2": null,
+            "city": "East Saint Louis",
+            "state": "IL",
+            "postcode": "62205",
+            "country": "US"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "/v2/animals/70321158"
+          },
+          "type": {
+            "href": "/v2/types/cat"
+          },
+          "organization": {
+            "href": "/v2/organizations/mo286"
+          }
+        }
+      },
+      {
+        "id": 70321146,
+        "organization_id": "NY1183",
+        "url": "https://www.petfinder.com/cat/jelly-70321146/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+        "type": "Cat",
+        "species": "Cat",
+        "breeds": {
+          "primary": "Domestic Short Hair",
+          "secondary": null,
+          "mixed": false,
+          "unknown": false
+        },
+        "colors": {
+          "primary": "Gray / Blue / Silver",
+          "secondary": "White",
+          "tertiary": null
+        },
+        "age": "Young",
+        "gender": "Male",
+        "size": "Medium",
+        "coat": null,
+        "attributes": {
+          "spayed_neutered": true,
+          "house_trained": false,
+          "declawed": false,
+          "special_needs": false,
+          "shots_current": true
+        },
+        "environment": {
+          "children": null,
+          "dogs": null,
+          "cats": null
+        },
+        "tags": [],
+        "name": "Jelly",
+        "description": "Jelly is a 1-year old male. \nLike all cats and kittens, he will need lots of socialization, play time and...",
+        "organization_animal_id": "BNYC-A-7231",
+        "photos": [],
+        "primary_photo_cropped": null,
+        "videos": [],
+        "status": "adoptable",
+        "status_changed_at": "2024-01-10T23:30:59+0000",
+        "published_at": "2024-01-10T23:30:58+0000",
+        "distance": null,
+        "contact": {
+          "email": "adoptNYC@bestfriends.org",
+          "phone": "(929) 292-8300",
+          "address": {
+            "address1": "307 W Broadway",
+            "address2": null,
+            "city": "New York",
+            "state": "NY",
+            "postcode": "10013",
+            "country": "US"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "/v2/animals/70321146"
+          },
+          "type": {
+            "href": "/v2/types/cat"
+          },
+          "organization": {
+            "href": "/v2/organizations/ny1183"
+          }
+        }
+      },
+      {
+        "id": 70321147,
+        "organization_id": "NY1183",
+        "url": "https://www.petfinder.com/cat/creamsicle-70321147/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+        "type": "Cat",
+        "species": "Cat",
+        "breeds": {
+          "primary": "Domestic Short Hair",
+          "secondary": null,
+          "mixed": false,
+          "unknown": false
+        },
+        "colors": {
+          "primary": "Orange / Red",
+          "secondary": "White",
+          "tertiary": null
+        },
+        "age": "Young",
+        "gender": "Male",
+        "size": "Extra Large",
+        "coat": null,
+        "attributes": {
+          "spayed_neutered": true,
+          "house_trained": false,
+          "declawed": false,
+          "special_needs": false,
+          "shots_current": true
+        },
+        "environment": {
+          "children": null,
+          "dogs": null,
+          "cats": null
+        },
+        "tags": [],
+        "name": "Creamsicle",
+        "description": null,
+        "organization_animal_id": "BNYC-A-7209",
+        "photos": [],
+        "primary_photo_cropped": null,
+        "videos": [],
+        "status": "adoptable",
+        "status_changed_at": "2024-01-10T23:30:59+0000",
+        "published_at": "2024-01-10T23:30:58+0000",
+        "distance": null,
+        "contact": {
+          "email": "adoptNYC@bestfriends.org",
+          "phone": "(929) 292-8300",
+          "address": {
+            "address1": "307 W Broadway",
+            "address2": null,
+            "city": "New York",
+            "state": "NY",
+            "postcode": "10013",
+            "country": "US"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "/v2/animals/70321147"
+          },
+          "type": {
+            "href": "/v2/types/cat"
+          },
+          "organization": {
+            "href": "/v2/organizations/ny1183"
+          }
+        }
+      },
+      {
+        "id": 70321148,
+        "organization_id": "NY1183",
+        "url": "https://www.petfinder.com/cat/callie-70321148/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+        "type": "Cat",
+        "species": "Cat",
+        "breeds": {
+          "primary": "Domestic Short Hair",
+          "secondary": null,
+          "mixed": false,
+          "unknown": false
+        },
+        "colors": {
+          "primary": "Brown / Chocolate",
+          "secondary": null,
+          "tertiary": null
+        },
+        "age": "Baby",
+        "gender": "Female",
+        "size": "Small",
+        "coat": null,
+        "attributes": {
+          "spayed_neutered": true,
+          "house_trained": false,
+          "declawed": false,
+          "special_needs": false,
+          "shots_current": true
+        },
+        "environment": {
+          "children": null,
+          "dogs": null,
+          "cats": null
+        },
+        "tags": [],
+        "name": "Callie",
+        "description": "Callie is an adorable 3-month old female kitten. Like all cats and kittens, she will need lots of socialization, play...",
+        "organization_animal_id": "BNYC-A-7196",
+        "photos": [],
+        "primary_photo_cropped": null,
+        "videos": [],
+        "status": "adoptable",
+        "status_changed_at": "2024-01-10T23:30:59+0000",
+        "published_at": "2024-01-10T23:30:58+0000",
+        "distance": null,
+        "contact": {
+          "email": "adoptNYC@bestfriends.org",
+          "phone": "(929) 292-8300",
+          "address": {
+            "address1": "307 W Broadway",
+            "address2": null,
+            "city": "New York",
+            "state": "NY",
+            "postcode": "10013",
+            "country": "US"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "/v2/animals/70321148"
+          },
+          "type": {
+            "href": "/v2/types/cat"
+          },
+          "organization": {
+            "href": "/v2/organizations/ny1183"
+          }
+        }
+      },
+      {
+        "id": 70321149,
+        "organization_id": "NY1183",
+        "url": "https://www.petfinder.com/cat/boo-boo-bear-70321149/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+        "type": "Cat",
+        "species": "Cat",
+        "breeds": {
+          "primary": "Domestic Short Hair",
+          "secondary": null,
+          "mixed": false,
+          "unknown": false
+        },
+        "colors": {
+          "primary": "Brown / Chocolate",
+          "secondary": "White",
+          "tertiary": null
+        },
+        "age": "Young",
+        "gender": "Female",
+        "size": "Medium",
+        "coat": null,
+        "attributes": {
+          "spayed_neutered": true,
+          "house_trained": false,
+          "declawed": false,
+          "special_needs": false,
+          "shots_current": true
+        },
+        "environment": {
+          "children": null,
+          "dogs": null,
+          "cats": null
+        },
+        "tags": [],
+        "name": "Boo Boo Bear",
+        "description": "Boo Boo Bear is an adorable 9-month old female. Like all cats and kittens, she will need lots of socialization,...",
+        "organization_animal_id": "BNYC-A-7214",
+        "photos": [],
+        "primary_photo_cropped": null,
+        "videos": [],
+        "status": "adoptable",
+        "status_changed_at": "2024-01-10T23:30:59+0000",
+        "published_at": "2024-01-10T23:30:58+0000",
+        "distance": null,
+        "contact": {
+          "email": "adoptNYC@bestfriends.org",
+          "phone": "(929) 292-8300",
+          "address": {
+            "address1": "307 W Broadway",
+            "address2": null,
+            "city": "New York",
+            "state": "NY",
+            "postcode": "10013",
+            "country": "US"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "/v2/animals/70321149"
+          },
+          "type": {
+            "href": "/v2/types/cat"
+          },
+          "organization": {
+            "href": "/v2/organizations/ny1183"
+          }
+        }
+      },
+      {
+        "id": 70321150,
+        "organization_id": "NY1183",
+        "url": "https://www.petfinder.com/cat/bailey-70321150/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+        "type": "Cat",
+        "species": "Cat",
+        "breeds": {
+          "primary": "Domestic Short Hair",
+          "secondary": null,
+          "mixed": false,
+          "unknown": false
+        },
+        "colors": {
+          "primary": "Black",
+          "secondary": "White",
+          "tertiary": null
+        },
+        "age": "Adult",
+        "gender": "Female",
+        "size": "Medium",
+        "coat": null,
+        "attributes": {
+          "spayed_neutered": true,
+          "house_trained": false,
+          "declawed": false,
+          "special_needs": false,
+          "shots_current": true
+        },
+        "environment": {
+          "children": null,
+          "dogs": null,
+          "cats": null
+        },
+        "tags": [],
+        "name": "Bailey",
+        "description": "Meet Bailey, this cute girl is 1 1/2-years old. Bailey is new to us and we are still getting to...",
+        "organization_animal_id": "BNYC-A-7183",
+        "photos": [],
+        "primary_photo_cropped": null,
+        "videos": [],
+        "status": "adoptable",
+        "status_changed_at": "2024-01-10T23:30:59+0000",
+        "published_at": "2024-01-10T23:30:58+0000",
+        "distance": null,
+        "contact": {
+          "email": "adoptNYC@bestfriends.org",
+          "phone": "(929) 292-8300",
+          "address": {
+            "address1": "307 W Broadway",
+            "address2": null,
+            "city": "New York",
+            "state": "NY",
+            "postcode": "10013",
+            "country": "US"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "/v2/animals/70321150"
+          },
+          "type": {
+            "href": "/v2/types/cat"
+          },
+          "organization": {
+            "href": "/v2/organizations/ny1183"
+          }
+        }
+      },
+      {
+        "id": 70321151,
+        "organization_id": "NY1183",
+        "url": "https://www.petfinder.com/cat/midnight-70321151/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+        "type": "Cat",
+        "species": "Cat",
+        "breeds": {
+          "primary": "Domestic Short Hair",
+          "secondary": null,
+          "mixed": false,
+          "unknown": false
+        },
+        "colors": {
+          "primary": "Black",
+          "secondary": "White",
+          "tertiary": null
+        },
+        "age": "Baby",
+        "gender": "Male",
+        "size": "Small",
+        "coat": null,
+        "attributes": {
+          "spayed_neutered": true,
+          "house_trained": false,
+          "declawed": false,
+          "special_needs": false,
+          "shots_current": true
+        },
+        "environment": {
+          "children": null,
+          "dogs": null,
+          "cats": null
+        },
+        "tags": [],
+        "name": "Midnight",
+        "description": "Midnight is an adorable 3-month old male kitten. Like all cats and kittens, he will need lots of socialization, play...",
+        "organization_animal_id": "BNYC-A-7193",
+        "photos": [],
+        "primary_photo_cropped": null,
+        "videos": [],
+        "status": "adoptable",
+        "status_changed_at": "2024-01-10T23:30:59+0000",
+        "published_at": "2024-01-10T23:30:58+0000",
+        "distance": null,
+        "contact": {
+          "email": "adoptNYC@bestfriends.org",
+          "phone": "(929) 292-8300",
+          "address": {
+            "address1": "307 W Broadway",
+            "address2": null,
+            "city": "New York",
+            "state": "NY",
+            "postcode": "10013",
+            "country": "US"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "/v2/animals/70321151"
+          },
+          "type": {
+            "href": "/v2/types/cat"
+          },
+          "organization": {
+            "href": "/v2/organizations/ny1183"
+          }
+        }
+      },
+      {
+        "id": 70321152,
+        "organization_id": "NY1183",
+        "url": "https://www.petfinder.com/cat/bella-70321152/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+        "type": "Cat",
+        "species": "Cat",
+        "breeds": {
+          "primary": "Domestic Short Hair",
+          "secondary": null,
+          "mixed": false,
+          "unknown": false
+        },
+        "colors": {
+          "primary": "Brown / Chocolate",
+          "secondary": null,
+          "tertiary": null
+        },
+        "age": "Baby",
+        "gender": "Female",
+        "size": "Small",
+        "coat": null,
+        "attributes": {
+          "spayed_neutered": true,
+          "house_trained": false,
+          "declawed": false,
+          "special_needs": false,
+          "shots_current": true
+        },
+        "environment": {
+          "children": null,
+          "dogs": null,
+          "cats": null
+        },
+        "tags": [],
+        "name": "Bella",
+        "description": "Bella is an adorable 3-month old female kitten. Like all cats and kittens, she will need lots of socialization, play...",
+        "organization_animal_id": "BNYC-A-7194",
+        "photos": [],
+        "primary_photo_cropped": null,
+        "videos": [],
+        "status": "adoptable",
+        "status_changed_at": "2024-01-10T23:30:59+0000",
+        "published_at": "2024-01-10T23:30:58+0000",
+        "distance": null,
+        "contact": {
+          "email": "adoptNYC@bestfriends.org",
+          "phone": "(929) 292-8300",
+          "address": {
+            "address1": "307 W Broadway",
+            "address2": null,
+            "city": "New York",
+            "state": "NY",
+            "postcode": "10013",
+            "country": "US"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "/v2/animals/70321152"
+          },
+          "type": {
+            "href": "/v2/types/cat"
+          },
+          "organization": {
+            "href": "/v2/organizations/ny1183"
+          }
+        }
+      },
+      {
+        "id": 70321153,
+        "organization_id": "NY1183",
+        "url": "https://www.petfinder.com/cat/grace-70321153/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+        "type": "Cat",
+        "species": "Cat",
+        "breeds": {
+          "primary": "Domestic Short Hair",
+          "secondary": null,
+          "mixed": false,
+          "unknown": false
+        },
+        "colors": {
+          "primary": "Brown / Chocolate",
+          "secondary": "White",
+          "tertiary": null
+        },
+        "age": "Baby",
+        "gender": "Female",
+        "size": "Small",
+        "coat": null,
+        "attributes": {
+          "spayed_neutered": true,
+          "house_trained": false,
+          "declawed": false,
+          "special_needs": false,
+          "shots_current": true
+        },
+        "environment": {
+          "children": null,
+          "dogs": null,
+          "cats": null
+        },
+        "tags": [],
+        "name": "Grace",
+        "description": "Grace is an adorable 3-month old female kitten. Like all cats and kittens, she will need lots of socialization, play...",
+        "organization_animal_id": "BNYC-A-7195",
+        "photos": [],
+        "primary_photo_cropped": null,
+        "videos": [],
+        "status": "adoptable",
+        "status_changed_at": "2024-01-10T23:30:59+0000",
+        "published_at": "2024-01-10T23:30:58+0000",
+        "distance": null,
+        "contact": {
+          "email": "adoptNYC@bestfriends.org",
+          "phone": "(929) 292-8300",
+          "address": {
+            "address1": "307 W Broadway",
+            "address2": null,
+            "city": "New York",
+            "state": "NY",
+            "postcode": "10013",
+            "country": "US"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "/v2/animals/70321153"
+          },
+          "type": {
+            "href": "/v2/types/cat"
+          },
+          "organization": {
+            "href": "/v2/organizations/ny1183"
+          }
+        }
+      }
+    ],
+    "pagination": {
+      "count_per_page": 10,
+      "total_count": 120490,
+      "current_page": 1,
+      "total_pages": 12049,
+      "_links": {
+        "next": {
+          "href": "/v2/animals?limit=10&type=cat&page=2"
+        }
+      }
+    }
+  }

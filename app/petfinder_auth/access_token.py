@@ -7,7 +7,7 @@ load_dotenv()
 PETFINDER_API_KEY = os.getenv("PETFINDER_API_KEY")
 PETFINDER_API_SECRET = os.getenv("PETFINDER_API_SECRET")
 
-def get_petfinder_access_token():
+def get_access_token():
 
     """
     Get a new access token from the PetFinder API using client credentials.

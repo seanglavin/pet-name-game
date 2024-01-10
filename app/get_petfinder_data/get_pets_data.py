@@ -1,5 +1,5 @@
 import requests
-from app.dependencies import get_petfinder_access_token
+from app.petfinder_auth.access_token import get_access_token
 
 
 PETFINDER_API_URL = "https://api.petfinder.com/v2/animals"
@@ -17,8 +17,9 @@ def get_cats(limit=10):
         dict: API response in JSON format.
     """
     # Get a new access token
-    access_token_data = get_petfinder_access_token()
+    access_token_data = get_access_token()
     access_token = access_token_data.get("access_token", "")
+
 
     params = {"type": "cat", "limit": limit}
     headers = {"Authorization": f"Bearer {access_token}", "Content-Type": "application/json"}

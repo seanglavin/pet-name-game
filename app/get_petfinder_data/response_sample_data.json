@@ -1,699 +1,1970 @@
 {
-    "animals": [
-      {
-        "id": 70321157,
-        "organization_id": "MO286",
-        "url": "https://www.petfinder.com/cat/sparklers-c-70321157/il/east-saint-louis/gateway-pet-guardians-mo286/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
-        "type": "Cat",
-        "species": "Cat",
-        "breeds": {
-          "primary": "Domestic Short Hair",
-          "secondary": null,
-          "mixed": false,
-          "unknown": false
-        },
-        "colors": {
-          "primary": "Buff / Tan / Fawn",
-          "secondary": null,
-          "tertiary": null
-        },
-        "age": "Adult",
-        "gender": "Female",
-        "size": "Small",
-        "coat": null,
-        "attributes": {
-          "spayed_neutered": true,
-          "house_trained": false,
-          "declawed": false,
-          "special_needs": false,
-          "shots_current": true
-        },
-        "environment": {
-          "children": null,
-          "dogs": null,
-          "cats": true
-        },
-        "tags": [
-          "Good with cats"
-        ],
-        "name": "Sparklers-C",
-        "description": "FOR FIRST 60 ADULT CATS TO BE ADOPTED:\nThis cat is $0 to adopt thanks to a thoughtful sponsorship in...",
-        "organization_animal_id": "GPG-A-5911",
-        "photos": [],
-        "primary_photo_cropped": null,
-        "videos": [],
-        "status": "adoptable",
-        "status_changed_at": "2024-01-10T23:31:07+0000",
-        "published_at": "2024-01-10T23:31:06+0000",
-        "distance": null,
-        "contact": {
-          "email": "adopt@gatewaypets.org",
-          "phone": null,
-          "address": {
-            "address1": null,
-            "address2": null,
-            "city": "East Saint Louis",
-            "state": "IL",
-            "postcode": "62205",
-            "country": "US"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "/v2/animals/70321157"
-          },
-          "type": {
-            "href": "/v2/types/cat"
-          },
-          "organization": {
-            "href": "/v2/organizations/mo286"
-          }
+  "animals": [
+    {
+      "id": 70196307,
+      "organization_id": "AB139",
+      "url": "https://www.petfinder.com/cat/marigold-70196307/ab/edmonton/yeg-cats-and-kittens-ab139/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Tabby",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Orange / Red",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Marigold",
+      "description": "Meet Marigold: The Elegant Darling\n\nMarigold, the three-month-old medium-haired orange tabby, exudes elegance and grace. Having spent their early days...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196307/1/?bust=1703955467&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196307/1/?bust=1703955467&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196307/1/?bust=1703955467&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196307/1/?bust=1703955467"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196307/1/?bust=1703955467&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196307/1/?bust=1703955467&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196307/1/?bust=1703955467&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196307/1/?bust=1703955467"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-30T16:57:49+0000",
+      "published_at": "2023-12-30T16:57:48+0000",
+      "distance": 4.7884,
+      "contact": {
+        "email": "yegcatsandkittens@gmail.com",
+        "phone": null,
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T6k 3x9",
+          "country": "CA"
         }
       },
-      {
-        "id": 70321158,
-        "organization_id": "MO286",
-        "url": "https://www.petfinder.com/cat/socket-c-70321158/il/east-saint-louis/gateway-pet-guardians-mo286/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
-        "type": "Cat",
-        "species": "Cat",
-        "breeds": {
-          "primary": "Domestic Short Hair",
-          "secondary": null,
-          "mixed": false,
-          "unknown": false
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70196307"
         },
-        "colors": {
-          "primary": "Black & White / Tuxedo",
-          "secondary": null,
-          "tertiary": null
+        "type": {
+          "href": "/v2/types/cat"
         },
-        "age": "Adult",
-        "gender": "Female",
-        "size": "Small",
-        "coat": null,
-        "attributes": {
-          "spayed_neutered": true,
-          "house_trained": false,
-          "declawed": false,
-          "special_needs": false,
-          "shots_current": true
-        },
-        "environment": {
-          "children": null,
-          "dogs": null,
-          "cats": true
-        },
-        "tags": [
-          "Good with cats"
-        ],
-        "name": "Socket-C",
-        "description": "FOR FIRST 60 ADULT CATS TO BE ADOPTED:\nThis cat is $0 to adopt thanks to a thoughtful sponsorship in...",
-        "organization_animal_id": "GPG-A-5910",
-        "photos": [],
-        "primary_photo_cropped": null,
-        "videos": [],
-        "status": "adoptable",
-        "status_changed_at": "2024-01-10T23:31:07+0000",
-        "published_at": "2024-01-10T23:31:06+0000",
-        "distance": null,
-        "contact": {
-          "email": "adopt@gatewaypets.org",
-          "phone": null,
-          "address": {
-            "address1": null,
-            "address2": null,
-            "city": "East Saint Louis",
-            "state": "IL",
-            "postcode": "62205",
-            "country": "US"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "/v2/animals/70321158"
-          },
-          "type": {
-            "href": "/v2/types/cat"
-          },
-          "organization": {
-            "href": "/v2/organizations/mo286"
-          }
-        }
-      },
-      {
-        "id": 70321146,
-        "organization_id": "NY1183",
-        "url": "https://www.petfinder.com/cat/jelly-70321146/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
-        "type": "Cat",
-        "species": "Cat",
-        "breeds": {
-          "primary": "Domestic Short Hair",
-          "secondary": null,
-          "mixed": false,
-          "unknown": false
-        },
-        "colors": {
-          "primary": "Gray / Blue / Silver",
-          "secondary": "White",
-          "tertiary": null
-        },
-        "age": "Young",
-        "gender": "Male",
-        "size": "Medium",
-        "coat": null,
-        "attributes": {
-          "spayed_neutered": true,
-          "house_trained": false,
-          "declawed": false,
-          "special_needs": false,
-          "shots_current": true
-        },
-        "environment": {
-          "children": null,
-          "dogs": null,
-          "cats": null
-        },
-        "tags": [],
-        "name": "Jelly",
-        "description": "Jelly is a 1-year old male. \nLike all cats and kittens, he will need lots of socialization, play time and...",
-        "organization_animal_id": "BNYC-A-7231",
-        "photos": [],
-        "primary_photo_cropped": null,
-        "videos": [],
-        "status": "adoptable",
-        "status_changed_at": "2024-01-10T23:30:59+0000",
-        "published_at": "2024-01-10T23:30:58+0000",
-        "distance": null,
-        "contact": {
-          "email": "adoptNYC@bestfriends.org",
-          "phone": "(929) 292-8300",
-          "address": {
-            "address1": "307 W Broadway",
-            "address2": null,
-            "city": "New York",
-            "state": "NY",
-            "postcode": "10013",
-            "country": "US"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "/v2/animals/70321146"
-          },
-          "type": {
-            "href": "/v2/types/cat"
-          },
-          "organization": {
-            "href": "/v2/organizations/ny1183"
-          }
-        }
-      },
-      {
-        "id": 70321147,
-        "organization_id": "NY1183",
-        "url": "https://www.petfinder.com/cat/creamsicle-70321147/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
-        "type": "Cat",
-        "species": "Cat",
-        "breeds": {
-          "primary": "Domestic Short Hair",
-          "secondary": null,
-          "mixed": false,
-          "unknown": false
-        },
-        "colors": {
-          "primary": "Orange / Red",
-          "secondary": "White",
-          "tertiary": null
-        },
-        "age": "Young",
-        "gender": "Male",
-        "size": "Extra Large",
-        "coat": null,
-        "attributes": {
-          "spayed_neutered": true,
-          "house_trained": false,
-          "declawed": false,
-          "special_needs": false,
-          "shots_current": true
-        },
-        "environment": {
-          "children": null,
-          "dogs": null,
-          "cats": null
-        },
-        "tags": [],
-        "name": "Creamsicle",
-        "description": null,
-        "organization_animal_id": "BNYC-A-7209",
-        "photos": [],
-        "primary_photo_cropped": null,
-        "videos": [],
-        "status": "adoptable",
-        "status_changed_at": "2024-01-10T23:30:59+0000",
-        "published_at": "2024-01-10T23:30:58+0000",
-        "distance": null,
-        "contact": {
-          "email": "adoptNYC@bestfriends.org",
-          "phone": "(929) 292-8300",
-          "address": {
-            "address1": "307 W Broadway",
-            "address2": null,
-            "city": "New York",
-            "state": "NY",
-            "postcode": "10013",
-            "country": "US"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "/v2/animals/70321147"
-          },
-          "type": {
-            "href": "/v2/types/cat"
-          },
-          "organization": {
-            "href": "/v2/organizations/ny1183"
-          }
-        }
-      },
-      {
-        "id": 70321148,
-        "organization_id": "NY1183",
-        "url": "https://www.petfinder.com/cat/callie-70321148/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
-        "type": "Cat",
-        "species": "Cat",
-        "breeds": {
-          "primary": "Domestic Short Hair",
-          "secondary": null,
-          "mixed": false,
-          "unknown": false
-        },
-        "colors": {
-          "primary": "Brown / Chocolate",
-          "secondary": null,
-          "tertiary": null
-        },
-        "age": "Baby",
-        "gender": "Female",
-        "size": "Small",
-        "coat": null,
-        "attributes": {
-          "spayed_neutered": true,
-          "house_trained": false,
-          "declawed": false,
-          "special_needs": false,
-          "shots_current": true
-        },
-        "environment": {
-          "children": null,
-          "dogs": null,
-          "cats": null
-        },
-        "tags": [],
-        "name": "Callie",
-        "description": "Callie is an adorable 3-month old female kitten. Like all cats and kittens, she will need lots of socialization, play...",
-        "organization_animal_id": "BNYC-A-7196",
-        "photos": [],
-        "primary_photo_cropped": null,
-        "videos": [],
-        "status": "adoptable",
-        "status_changed_at": "2024-01-10T23:30:59+0000",
-        "published_at": "2024-01-10T23:30:58+0000",
-        "distance": null,
-        "contact": {
-          "email": "adoptNYC@bestfriends.org",
-          "phone": "(929) 292-8300",
-          "address": {
-            "address1": "307 W Broadway",
-            "address2": null,
-            "city": "New York",
-            "state": "NY",
-            "postcode": "10013",
-            "country": "US"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "/v2/animals/70321148"
-          },
-          "type": {
-            "href": "/v2/types/cat"
-          },
-          "organization": {
-            "href": "/v2/organizations/ny1183"
-          }
-        }
-      },
-      {
-        "id": 70321149,
-        "organization_id": "NY1183",
-        "url": "https://www.petfinder.com/cat/boo-boo-bear-70321149/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
-        "type": "Cat",
-        "species": "Cat",
-        "breeds": {
-          "primary": "Domestic Short Hair",
-          "secondary": null,
-          "mixed": false,
-          "unknown": false
-        },
-        "colors": {
-          "primary": "Brown / Chocolate",
-          "secondary": "White",
-          "tertiary": null
-        },
-        "age": "Young",
-        "gender": "Female",
-        "size": "Medium",
-        "coat": null,
-        "attributes": {
-          "spayed_neutered": true,
-          "house_trained": false,
-          "declawed": false,
-          "special_needs": false,
-          "shots_current": true
-        },
-        "environment": {
-          "children": null,
-          "dogs": null,
-          "cats": null
-        },
-        "tags": [],
-        "name": "Boo Boo Bear",
-        "description": "Boo Boo Bear is an adorable 9-month old female. Like all cats and kittens, she will need lots of socialization,...",
-        "organization_animal_id": "BNYC-A-7214",
-        "photos": [],
-        "primary_photo_cropped": null,
-        "videos": [],
-        "status": "adoptable",
-        "status_changed_at": "2024-01-10T23:30:59+0000",
-        "published_at": "2024-01-10T23:30:58+0000",
-        "distance": null,
-        "contact": {
-          "email": "adoptNYC@bestfriends.org",
-          "phone": "(929) 292-8300",
-          "address": {
-            "address1": "307 W Broadway",
-            "address2": null,
-            "city": "New York",
-            "state": "NY",
-            "postcode": "10013",
-            "country": "US"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "/v2/animals/70321149"
-          },
-          "type": {
-            "href": "/v2/types/cat"
-          },
-          "organization": {
-            "href": "/v2/organizations/ny1183"
-          }
-        }
-      },
-      {
-        "id": 70321150,
-        "organization_id": "NY1183",
-        "url": "https://www.petfinder.com/cat/bailey-70321150/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
-        "type": "Cat",
-        "species": "Cat",
-        "breeds": {
-          "primary": "Domestic Short Hair",
-          "secondary": null,
-          "mixed": false,
-          "unknown": false
-        },
-        "colors": {
-          "primary": "Black",
-          "secondary": "White",
-          "tertiary": null
-        },
-        "age": "Adult",
-        "gender": "Female",
-        "size": "Medium",
-        "coat": null,
-        "attributes": {
-          "spayed_neutered": true,
-          "house_trained": false,
-          "declawed": false,
-          "special_needs": false,
-          "shots_current": true
-        },
-        "environment": {
-          "children": null,
-          "dogs": null,
-          "cats": null
-        },
-        "tags": [],
-        "name": "Bailey",
-        "description": "Meet Bailey, this cute girl is 1 1/2-years old. Bailey is new to us and we are still getting to...",
-        "organization_animal_id": "BNYC-A-7183",
-        "photos": [],
-        "primary_photo_cropped": null,
-        "videos": [],
-        "status": "adoptable",
-        "status_changed_at": "2024-01-10T23:30:59+0000",
-        "published_at": "2024-01-10T23:30:58+0000",
-        "distance": null,
-        "contact": {
-          "email": "adoptNYC@bestfriends.org",
-          "phone": "(929) 292-8300",
-          "address": {
-            "address1": "307 W Broadway",
-            "address2": null,
-            "city": "New York",
-            "state": "NY",
-            "postcode": "10013",
-            "country": "US"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "/v2/animals/70321150"
-          },
-          "type": {
-            "href": "/v2/types/cat"
-          },
-          "organization": {
-            "href": "/v2/organizations/ny1183"
-          }
-        }
-      },
-      {
-        "id": 70321151,
-        "organization_id": "NY1183",
-        "url": "https://www.petfinder.com/cat/midnight-70321151/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
-        "type": "Cat",
-        "species": "Cat",
-        "breeds": {
-          "primary": "Domestic Short Hair",
-          "secondary": null,
-          "mixed": false,
-          "unknown": false
-        },
-        "colors": {
-          "primary": "Black",
-          "secondary": "White",
-          "tertiary": null
-        },
-        "age": "Baby",
-        "gender": "Male",
-        "size": "Small",
-        "coat": null,
-        "attributes": {
-          "spayed_neutered": true,
-          "house_trained": false,
-          "declawed": false,
-          "special_needs": false,
-          "shots_current": true
-        },
-        "environment": {
-          "children": null,
-          "dogs": null,
-          "cats": null
-        },
-        "tags": [],
-        "name": "Midnight",
-        "description": "Midnight is an adorable 3-month old male kitten. Like all cats and kittens, he will need lots of socialization, play...",
-        "organization_animal_id": "BNYC-A-7193",
-        "photos": [],
-        "primary_photo_cropped": null,
-        "videos": [],
-        "status": "adoptable",
-        "status_changed_at": "2024-01-10T23:30:59+0000",
-        "published_at": "2024-01-10T23:30:58+0000",
-        "distance": null,
-        "contact": {
-          "email": "adoptNYC@bestfriends.org",
-          "phone": "(929) 292-8300",
-          "address": {
-            "address1": "307 W Broadway",
-            "address2": null,
-            "city": "New York",
-            "state": "NY",
-            "postcode": "10013",
-            "country": "US"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "/v2/animals/70321151"
-          },
-          "type": {
-            "href": "/v2/types/cat"
-          },
-          "organization": {
-            "href": "/v2/organizations/ny1183"
-          }
-        }
-      },
-      {
-        "id": 70321152,
-        "organization_id": "NY1183",
-        "url": "https://www.petfinder.com/cat/bella-70321152/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
-        "type": "Cat",
-        "species": "Cat",
-        "breeds": {
-          "primary": "Domestic Short Hair",
-          "secondary": null,
-          "mixed": false,
-          "unknown": false
-        },
-        "colors": {
-          "primary": "Brown / Chocolate",
-          "secondary": null,
-          "tertiary": null
-        },
-        "age": "Baby",
-        "gender": "Female",
-        "size": "Small",
-        "coat": null,
-        "attributes": {
-          "spayed_neutered": true,
-          "house_trained": false,
-          "declawed": false,
-          "special_needs": false,
-          "shots_current": true
-        },
-        "environment": {
-          "children": null,
-          "dogs": null,
-          "cats": null
-        },
-        "tags": [],
-        "name": "Bella",
-        "description": "Bella is an adorable 3-month old female kitten. Like all cats and kittens, she will need lots of socialization, play...",
-        "organization_animal_id": "BNYC-A-7194",
-        "photos": [],
-        "primary_photo_cropped": null,
-        "videos": [],
-        "status": "adoptable",
-        "status_changed_at": "2024-01-10T23:30:59+0000",
-        "published_at": "2024-01-10T23:30:58+0000",
-        "distance": null,
-        "contact": {
-          "email": "adoptNYC@bestfriends.org",
-          "phone": "(929) 292-8300",
-          "address": {
-            "address1": "307 W Broadway",
-            "address2": null,
-            "city": "New York",
-            "state": "NY",
-            "postcode": "10013",
-            "country": "US"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "/v2/animals/70321152"
-          },
-          "type": {
-            "href": "/v2/types/cat"
-          },
-          "organization": {
-            "href": "/v2/organizations/ny1183"
-          }
-        }
-      },
-      {
-        "id": 70321153,
-        "organization_id": "NY1183",
-        "url": "https://www.petfinder.com/cat/grace-70321153/ny/new-york/best-friends-animal-society-soho-ny1183/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
-        "type": "Cat",
-        "species": "Cat",
-        "breeds": {
-          "primary": "Domestic Short Hair",
-          "secondary": null,
-          "mixed": false,
-          "unknown": false
-        },
-        "colors": {
-          "primary": "Brown / Chocolate",
-          "secondary": "White",
-          "tertiary": null
-        },
-        "age": "Baby",
-        "gender": "Female",
-        "size": "Small",
-        "coat": null,
-        "attributes": {
-          "spayed_neutered": true,
-          "house_trained": false,
-          "declawed": false,
-          "special_needs": false,
-          "shots_current": true
-        },
-        "environment": {
-          "children": null,
-          "dogs": null,
-          "cats": null
-        },
-        "tags": [],
-        "name": "Grace",
-        "description": "Grace is an adorable 3-month old female kitten. Like all cats and kittens, she will need lots of socialization, play...",
-        "organization_animal_id": "BNYC-A-7195",
-        "photos": [],
-        "primary_photo_cropped": null,
-        "videos": [],
-        "status": "adoptable",
-        "status_changed_at": "2024-01-10T23:30:59+0000",
-        "published_at": "2024-01-10T23:30:58+0000",
-        "distance": null,
-        "contact": {
-          "email": "adoptNYC@bestfriends.org",
-          "phone": "(929) 292-8300",
-          "address": {
-            "address1": "307 W Broadway",
-            "address2": null,
-            "city": "New York",
-            "state": "NY",
-            "postcode": "10013",
-            "country": "US"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "/v2/animals/70321153"
-          },
-          "type": {
-            "href": "/v2/types/cat"
-          },
-          "organization": {
-            "href": "/v2/organizations/ny1183"
-          }
+        "organization": {
+          "href": "/v2/organizations/ab139"
         }
       }
-    ],
-    "pagination": {
-      "count_per_page": 10,
-      "total_count": 120490,
-      "current_page": 1,
-      "total_pages": 12049,
+    },
+    {
+      "id": 70196303,
+      "organization_id": "AB139",
+      "url": "https://www.petfinder.com/cat/tango-70196303/ab/edmonton/yeg-cats-and-kittens-ab139/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Tabby",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Orange / Red",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Tango",
+      "description": "Introducing Tango: The Charming Companion\n\nTango, with their medium-length, orange tabby fur, is the epitome of charm at just three...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196303/1/?bust=1703955425&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196303/1/?bust=1703955425&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196303/1/?bust=1703955425&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196303/1/?bust=1703955425"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196303/1/?bust=1703955425&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196303/1/?bust=1703955425&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196303/1/?bust=1703955425&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196303/1/?bust=1703955425"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-30T16:57:07+0000",
+      "published_at": "2023-12-30T16:57:06+0000",
+      "distance": 4.7884,
+      "contact": {
+        "email": "yegcatsandkittens@gmail.com",
+        "phone": null,
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T6k 3x9",
+          "country": "CA"
+        }
+      },
       "_links": {
-        "next": {
-          "href": "/v2/animals?limit=10&type=cat&page=2"
+        "self": {
+          "href": "/v2/animals/70196303"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab139"
+        }
+      }
+    },
+    {
+      "id": 70196301,
+      "organization_id": "AB139",
+      "url": "https://www.petfinder.com/cat/sunny-70196301/ab/edmonton/yeg-cats-and-kittens-ab139/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Tabby",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Orange / Red",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Sunny",
+      "description": "Meet Sunny: The Spirited Explorer\n\nSunny is not your typical kitten; Sunny is a three-month-old medium-haired orange tabby with an...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196301/1/?bust=1703955379&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196301/1/?bust=1703955379&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196301/1/?bust=1703955379&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196301/1/?bust=1703955379"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196301/1/?bust=1703955379&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196301/1/?bust=1703955379&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196301/1/?bust=1703955379&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70196301/1/?bust=1703955379"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-30T16:56:21+0000",
+      "published_at": "2023-12-30T16:56:20+0000",
+      "distance": 4.7884,
+      "contact": {
+        "email": "yegcatsandkittens@gmail.com",
+        "phone": null,
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T6k 3x9",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70196301"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab139"
+        }
+      }
+    },
+    {
+      "id": 70169280,
+      "organization_id": "AB148",
+      "url": "https://www.petfinder.com/dog/bernadette-70169280/ab/edmonton/paws-up-program-ab148/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Mixed Breed",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black",
+        "secondary": "White / Cream",
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [
+        "Friendly",
+        "Gentle",
+        "Playful"
+      ],
+      "name": "Bernadette",
+      "description": "Was brought in as a Stray in a First Nation community.",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/2/?bust=1703741371&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/2/?bust=1703741371&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/2/?bust=1703741371&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/2/?bust=1703741371"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/1/?bust=1703741370&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/1/?bust=1703741370&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/1/?bust=1703741370&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/1/?bust=1703741370"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/3/?bust=1703741372&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/3/?bust=1703741372&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/3/?bust=1703741372&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/3/?bust=1703741372"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/4/?bust=1703741372&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/4/?bust=1703741372&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/4/?bust=1703741372&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/4/?bust=1703741372"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/5/?bust=1703741373&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/5/?bust=1703741373&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/5/?bust=1703741373&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/5/?bust=1703741373"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/6/?bust=1703741374&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/6/?bust=1703741374&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/6/?bust=1703741374&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/6/?bust=1703741374"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/2/?bust=1703741371&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/2/?bust=1703741371&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/2/?bust=1703741371&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169280/2/?bust=1703741371"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-28T05:29:36+0000",
+      "published_at": "2023-12-28T05:29:35+0000",
+      "distance": 7.4622,
+      "contact": {
+        "email": "ashley@pawsupprogram.com",
+        "phone": "(780) 394-4587",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T5Y 3N6",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70169280"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab148"
+        }
+      }
+    },
+    {
+      "id": 70169268,
+      "organization_id": "AB148",
+      "url": "https://www.petfinder.com/dog/leonard-70169268/ab/edmonton/paws-up-program-ab148/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Rottweiler",
+        "secondary": "Shepherd",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black",
+        "secondary": "Bicolor",
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Large",
+      "coat": "Medium",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [
+        "Friendly",
+        "Affectionate",
+        "Gentle",
+        "Quiet",
+        "Loves kisses",
+        "Couch Potato"
+      ],
+      "name": "Leonard",
+      "description": "He was a stray on a First Nation community. Such a sweet loving boy.",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/4/?bust=1703741142&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/4/?bust=1703741142&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/4/?bust=1703741142&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/4/?bust=1703741142"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/1/?bust=1703741140&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/1/?bust=1703741140&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/1/?bust=1703741140&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/1/?bust=1703741140"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/2/?bust=1703741141&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/2/?bust=1703741141&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/2/?bust=1703741141&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/2/?bust=1703741141"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/3/?bust=1703741141&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/3/?bust=1703741141&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/3/?bust=1703741141&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/3/?bust=1703741141"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/5/?bust=1703741142&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/5/?bust=1703741142&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/5/?bust=1703741142&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/5/?bust=1703741142"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/6/?bust=1703741143&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/6/?bust=1703741143&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/6/?bust=1703741143&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/6/?bust=1703741143"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/4/?bust=1703741142&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/4/?bust=1703741142&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/4/?bust=1703741142&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169268/4/?bust=1703741142"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-28T05:25:45+0000",
+      "published_at": "2023-12-28T05:25:44+0000",
+      "distance": 7.4622,
+      "contact": {
+        "email": "ashley@pawsupprogram.com",
+        "phone": "(780) 394-4587",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T5Y 3N6",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70169268"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab148"
+        }
+      }
+    },
+    {
+      "id": 70169232,
+      "organization_id": "AB148",
+      "url": "https://www.petfinder.com/dog/amy-farrah-fowler-70169232/ab/edmonton/paws-up-program-ab148/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Mixed Breed",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Apricot / Beige",
+        "secondary": "Black",
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": "Medium",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Amy Farrah Fowler",
+      "description": "Mom is 35 lbs. Dad is unknown",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/2/?bust=1703740849&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/2/?bust=1703740849&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/2/?bust=1703740849&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/2/?bust=1703740849"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/1/?bust=1703740849&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/1/?bust=1703740849&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/1/?bust=1703740849&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/1/?bust=1703740849"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/3/?bust=1703740850&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/3/?bust=1703740850&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/3/?bust=1703740850&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/3/?bust=1703740850"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/4/?bust=1703740850&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/4/?bust=1703740850&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/4/?bust=1703740850&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/4/?bust=1703740850"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/5/?bust=1703740851&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/5/?bust=1703740851&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/5/?bust=1703740851&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/5/?bust=1703740851"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/6/?bust=1703740852&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/6/?bust=1703740852&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/6/?bust=1703740852&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/6/?bust=1703740852"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/2/?bust=1703740849&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/2/?bust=1703740849&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/2/?bust=1703740849&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169232/2/?bust=1703740849"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-28T05:20:54+0000",
+      "published_at": "2023-12-28T05:20:53+0000",
+      "distance": 7.4622,
+      "contact": {
+        "email": "ashley@pawsupprogram.com",
+        "phone": "(780) 394-4587",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T5Y 3N6",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70169232"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab148"
+        }
+      }
+    },
+    {
+      "id": 70169222,
+      "organization_id": "AB148",
+      "url": "https://www.petfinder.com/dog/howard-70169222/ab/edmonton/paws-up-program-ab148/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Mixed Breed",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Apricot / Beige",
+        "secondary": "Bicolor",
+        "tertiary": "Black"
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": "Medium",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Howard",
+      "description": "Mom is 35 lbs. Dad is unknown",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/1/?bust=1703740701&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/1/?bust=1703740701&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/1/?bust=1703740701&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/1/?bust=1703740701"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/2/?bust=1703740702&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/2/?bust=1703740702&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/2/?bust=1703740702&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/2/?bust=1703740702"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/3/?bust=1703740702&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/3/?bust=1703740702&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/3/?bust=1703740702&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/3/?bust=1703740702"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/4/?bust=1703740703&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/4/?bust=1703740703&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/4/?bust=1703740703&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/4/?bust=1703740703"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/5/?bust=1703740704&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/5/?bust=1703740704&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/5/?bust=1703740704&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/5/?bust=1703740704"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/6/?bust=1703740704&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/6/?bust=1703740704&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/6/?bust=1703740704&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/6/?bust=1703740704"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/1/?bust=1703740701&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/1/?bust=1703740701&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/1/?bust=1703740701&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70169222/1/?bust=1703740701"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-28T05:18:26+0000",
+      "published_at": "2023-12-28T05:18:25+0000",
+      "distance": 7.4622,
+      "contact": {
+        "email": "ashley@pawsupprogram.com",
+        "phone": "(780) 394-4587",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T5Y 3N6",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70169222"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab148"
+        }
+      }
+    },
+    {
+      "id": 70167392,
+      "organization_id": "AB96",
+      "url": "https://www.petfinder.com/dog/thor-70167392/ab/edmonton/adopt-a-dobe-rescue-society-ab96/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Doberman Pinscher",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Large",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": true,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Thor",
+      "description": "Thor is a 2 yr old male red Doberman with a docked tail and natural ears. If you have a...",
+      "organization_animal_id": "ps_73096485",
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/1/?bust=1705074048&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/1/?bust=1705074048&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/1/?bust=1705074048&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/1/?bust=1705074048"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/2/?bust=1705074049&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/2/?bust=1705074049&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/2/?bust=1705074049&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/2/?bust=1705074049"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/3/?bust=1705074049&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/3/?bust=1705074049&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/3/?bust=1705074049&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/3/?bust=1705074049"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/4/?bust=1705074049&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/4/?bust=1705074049&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/4/?bust=1705074049&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/4/?bust=1705074049"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/5/?bust=1705074048&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/5/?bust=1705074048&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/5/?bust=1705074048&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/5/?bust=1705074048"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/6/?bust=1705074049&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/6/?bust=1705074049&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/6/?bust=1705074049&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/6/?bust=1705074049"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/1/?bust=1705074048&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/1/?bust=1705074048&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/1/?bust=1705074048&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70167392/1/?bust=1705074048"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-28T01:07:32+0000",
+      "published_at": "2023-12-28T01:07:29+0000",
+      "distance": 2.3141,
+      "contact": {
+        "email": "adoptadobe@gmail.com",
+        "phone": null,
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T6E 0T7",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70167392"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab96"
+        }
+      }
+    },
+    {
+      "id": 70157724,
+      "organization_id": "AB148",
+      "url": "https://www.petfinder.com/dog/belle-70157724/ab/edmonton/paws-up-program-ab148/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Shepherd",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Bicolor",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Belle",
+      "description": "We cover all vetting. You can foster this sweet baby till she can be spayed and fully vaccinated. Then you...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/4/?bust=1703655967&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/4/?bust=1703655967&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/4/?bust=1703655967&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/4/?bust=1703655967"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/1/?bust=1703655965&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/1/?bust=1703655965&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/1/?bust=1703655965&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/1/?bust=1703655965"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/2/?bust=1703655966&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/2/?bust=1703655966&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/2/?bust=1703655966&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/2/?bust=1703655966"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/3/?bust=1703655966&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/3/?bust=1703655966&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/3/?bust=1703655966&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/3/?bust=1703655966"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/4/?bust=1703655967&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/4/?bust=1703655967&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/4/?bust=1703655967&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157724/4/?bust=1703655967"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-27T05:46:10+0000",
+      "published_at": "2023-12-27T05:46:08+0000",
+      "distance": 7.4622,
+      "contact": {
+        "email": "ashley@pawsupprogram.com",
+        "phone": "(780) 394-4587",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T5Y 3N6",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70157724"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab148"
+        }
+      }
+    },
+    {
+      "id": 70157722,
+      "organization_id": "AB148",
+      "url": "https://www.petfinder.com/dog/tiana-70157722/ab/edmonton/paws-up-program-ab148/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Shepherd",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Bicolor",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Tiana",
+      "description": "We cover all vetting. You can foster this sweet baby till she can be spayed and fully vaccinated. Then you...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/4/?bust=1703655913&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/4/?bust=1703655913&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/4/?bust=1703655913&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/4/?bust=1703655913"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/1/?bust=1703655911&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/1/?bust=1703655911&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/1/?bust=1703655911&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/1/?bust=1703655911"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/2/?bust=1703655912&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/2/?bust=1703655912&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/2/?bust=1703655912&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/2/?bust=1703655912"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/3/?bust=1703655912&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/3/?bust=1703655912&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/3/?bust=1703655912&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/3/?bust=1703655912"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/4/?bust=1703655913&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/4/?bust=1703655913&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/4/?bust=1703655913&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157722/4/?bust=1703655913"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-27T05:45:16+0000",
+      "published_at": "2023-12-27T05:45:14+0000",
+      "distance": 7.4622,
+      "contact": {
+        "email": "ashley@pawsupprogram.com",
+        "phone": "(780) 394-4587",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T5Y 3N6",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70157722"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab148"
+        }
+      }
+    },
+    {
+      "id": 70157720,
+      "organization_id": "AB148",
+      "url": "https://www.petfinder.com/dog/moana-70157720/ab/edmonton/paws-up-program-ab148/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Shepherd",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Bicolor",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Moana",
+      "description": "We cover all vetting. You can foster this sweet baby till she can be spayed and fully vaccinated. Then you...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/4/?bust=1703655863&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/4/?bust=1703655863&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/4/?bust=1703655863&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/4/?bust=1703655863"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/1/?bust=1703655861&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/1/?bust=1703655861&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/1/?bust=1703655861&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/1/?bust=1703655861"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/2/?bust=1703655862&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/2/?bust=1703655862&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/2/?bust=1703655862&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/2/?bust=1703655862"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/3/?bust=1703655863&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/3/?bust=1703655863&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/3/?bust=1703655863&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/3/?bust=1703655863"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/4/?bust=1703655863&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/4/?bust=1703655863&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/4/?bust=1703655863&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157720/4/?bust=1703655863"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-27T05:44:26+0000",
+      "published_at": "2023-12-27T05:44:24+0000",
+      "distance": 7.4622,
+      "contact": {
+        "email": "ashley@pawsupprogram.com",
+        "phone": "(780) 394-4587",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T5Y 3N6",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70157720"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab148"
+        }
+      }
+    },
+    {
+      "id": 70157717,
+      "organization_id": "AB148",
+      "url": "https://www.petfinder.com/dog/jasmine-70157717/ab/edmonton/paws-up-program-ab148/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Shepherd",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Bicolor",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Jasmine",
+      "description": "We cover all vetting. You can foster this sweet baby till she can be spayed and fully vaccinated. Then you...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/4/?bust=1703655809&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/4/?bust=1703655809&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/4/?bust=1703655809&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/4/?bust=1703655809"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/1/?bust=1703655807&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/1/?bust=1703655807&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/1/?bust=1703655807&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/1/?bust=1703655807"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/2/?bust=1703655807&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/2/?bust=1703655807&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/2/?bust=1703655807&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/2/?bust=1703655807"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/3/?bust=1703655808&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/3/?bust=1703655808&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/3/?bust=1703655808&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/3/?bust=1703655808"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/4/?bust=1703655809&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/4/?bust=1703655809&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/4/?bust=1703655809&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157717/4/?bust=1703655809"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-27T05:43:32+0000",
+      "published_at": "2023-12-27T05:43:30+0000",
+      "distance": 7.4622,
+      "contact": {
+        "email": "ashley@pawsupprogram.com",
+        "phone": "(780) 394-4587",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T5Y 3N6",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70157717"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab148"
+        }
+      }
+    },
+    {
+      "id": 70157715,
+      "organization_id": "AB148",
+      "url": "https://www.petfinder.com/dog/aurora-70157715/ab/edmonton/paws-up-program-ab148/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Shepherd",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Bicolor",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Aurora",
+      "description": "We cover all vetting. You can foster this sweet baby till she can be spayed and fully vaccinated. Then you...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/4/?bust=1703655722&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/4/?bust=1703655722&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/4/?bust=1703655722&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/4/?bust=1703655722"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/1/?bust=1703655720&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/1/?bust=1703655720&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/1/?bust=1703655720&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/1/?bust=1703655720"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/2/?bust=1703655721&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/2/?bust=1703655721&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/2/?bust=1703655721&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/2/?bust=1703655721"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/3/?bust=1703655722&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/3/?bust=1703655722&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/3/?bust=1703655722&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/3/?bust=1703655722"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/4/?bust=1703655722&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/4/?bust=1703655722&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/4/?bust=1703655722&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157715/4/?bust=1703655722"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-27T05:42:05+0000",
+      "published_at": "2023-12-27T05:42:03+0000",
+      "distance": 7.4622,
+      "contact": {
+        "email": "ashley@pawsupprogram.com",
+        "phone": "(780) 394-4587",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T5Y 3N6",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70157715"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab148"
+        }
+      }
+    },
+    {
+      "id": 70157713,
+      "organization_id": "AB148",
+      "url": "https://www.petfinder.com/dog/captain-70157713/ab/edmonton/paws-up-program-ab148/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Shepherd",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Bicolor",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": true,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Captain",
+      "description": "Will likely have an eye removed at neuter. We cover all vetting. You can foster this sweet baby till he...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/1/?bust=1703655597&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/1/?bust=1703655597&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/1/?bust=1703655597&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/1/?bust=1703655597"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/2/?bust=1703655597&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/2/?bust=1703655597&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/2/?bust=1703655597&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/2/?bust=1703655597"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/3/?bust=1703655598&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/3/?bust=1703655598&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/3/?bust=1703655598&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/3/?bust=1703655598"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/4/?bust=1703655599&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/4/?bust=1703655599&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/4/?bust=1703655599&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/4/?bust=1703655599"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/5/?bust=1703655599&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/5/?bust=1703655599&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/5/?bust=1703655599&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/5/?bust=1703655599"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/6/?bust=1703655600&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/6/?bust=1703655600&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/6/?bust=1703655600&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/6/?bust=1703655600"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/1/?bust=1703655597&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/1/?bust=1703655597&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/1/?bust=1703655597&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70157713/1/?bust=1703655597"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-27T05:40:02+0000",
+      "published_at": "2023-12-27T05:40:01+0000",
+      "distance": 7.4622,
+      "contact": {
+        "email": "ashley@pawsupprogram.com",
+        "phone": "(780) 394-4587",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T5Y 3N6",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70157713"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab148"
+        }
+      }
+    },
+    {
+      "id": 70155470,
+      "organization_id": "AB135",
+      "url": "https://www.petfinder.com/cat/domino-70155470/ab/wetaskiwin/wetaskiwin-animal-shelter-ab135/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Norwegian Forest Cat",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black & White / Tuxedo",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Male",
+      "size": "Small",
+      "coat": "Long",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": true
+      },
+      "tags": [
+        "Friendly",
+        "Affectionate",
+        "Loyal",
+        "Gentle",
+        "Playful",
+        "Dignified",
+        "Funny",
+        "Loves Kisses"
+      ],
+      "name": "Domino",
+      "description": "Domino is about a 8 Month old Long Haired Male. You will find Domino rubbing up against his kennel trying...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155470/1/?bust=1703635250&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155470/1/?bust=1703635250&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155470/1/?bust=1703635250&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155470/1/?bust=1703635250"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155470/1/?bust=1703635250&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155470/1/?bust=1703635250&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155470/1/?bust=1703635250&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155470/1/?bust=1703635250"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-27T00:01:15+0000",
+      "published_at": "2023-12-27T00:01:14+0000",
+      "distance": 40.4352,
+      "contact": {
+        "email": "wetaskiwinpetcentre@gmail.com",
+        "phone": "(780) 352-7006",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "wetaskiwin",
+          "state": "AB",
+          "postcode": "t9a 2j4",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70155470"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab135"
+        }
+      }
+    },
+    {
+      "id": 70155316,
+      "organization_id": "AB135",
+      "url": "https://www.petfinder.com/cat/jasper-70155316/ab/wetaskiwin/wetaskiwin-animal-shelter-ab135/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Tuxedo",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black",
+        "secondary": "Black & White / Tuxedo",
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": true
+      },
+      "tags": [
+        "Affectionate",
+        "Friendly",
+        "Loyal",
+        "Gentle",
+        "Playful",
+        "Smart",
+        "Dignified",
+        "Funny",
+        "Independent",
+        "Curious",
+        "Loves Kisses"
+      ],
+      "name": "Jasper",
+      "description": "Jasper is about a 1.5 Year old neutered male. You will find Jasper sleeping under his blanket until he hears...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155316/1/?bust=1703634846&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155316/1/?bust=1703634846&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155316/1/?bust=1703634846&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155316/1/?bust=1703634846"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155316/1/?bust=1703634846&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155316/1/?bust=1703634846&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155316/1/?bust=1703634846&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70155316/1/?bust=1703634846"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-26T23:54:08+0000",
+      "published_at": "2023-12-26T23:54:07+0000",
+      "distance": 40.4352,
+      "contact": {
+        "email": "wetaskiwinpetcentre@gmail.com",
+        "phone": "(780) 352-7006",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "wetaskiwin",
+          "state": "AB",
+          "postcode": "t9a 2j4",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70155316"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab135"
+        }
+      }
+    },
+    {
+      "id": 70151669,
+      "organization_id": "AB135",
+      "url": "https://www.petfinder.com/dog/rajah-70151669/ab/wetaskiwin/wetaskiwin-animal-shelter-ab135/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Mastiff",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Yellow / Tan / Blond / Fawn",
+        "secondary": "Black",
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Female",
+      "size": "Large",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": null
+      },
+      "tags": [
+        "Friendly",
+        "Affectionate",
+        "Loyal",
+        "Gentle",
+        "Smart",
+        "Playful",
+        "Quiet",
+        "Funny",
+        "Loves kisses",
+        "Couch Potato"
+      ],
+      "name": "Rajah",
+      "description": "Rajah is about a 1.5 year old Mastiff mix. This big girl weighs about 80lb and is a larger sized...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/2/?bust=1704496108&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/2/?bust=1704496108&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/2/?bust=1704496108&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/2/?bust=1704496108"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/1/?bust=1703616534&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/1/?bust=1703616534&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/1/?bust=1703616534&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/1/?bust=1703616534"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/3/?bust=1704496110&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/3/?bust=1704496110&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/3/?bust=1704496110&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/3/?bust=1704496110"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/2/?bust=1704496108&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/2/?bust=1704496108&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/2/?bust=1704496108&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70151669/2/?bust=1704496108"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-26T18:48:59+0000",
+      "published_at": "2023-12-26T18:48:57+0000",
+      "distance": 40.4352,
+      "contact": {
+        "email": "wetaskiwinpetcentre@gmail.com",
+        "phone": "(780) 352-7006",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "wetaskiwin",
+          "state": "AB",
+          "postcode": "t9a 2j4",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70151669"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab135"
+        }
+      }
+    },
+    {
+      "id": 70134816,
+      "organization_id": "AB148",
+      "url": "https://www.petfinder.com/dog/sophie-70134816/ab/edmonton/paws-up-program-ab148/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Saint Bernard",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Tricolor (Brown, Black, & White)",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Female",
+      "size": "Large",
+      "coat": "Medium",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [],
+      "name": "Sophie",
+      "description": null,
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/1/?bust=1703341346&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/1/?bust=1703341346&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/1/?bust=1703341346&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/1/?bust=1703341346"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/2/?bust=1703341347&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/2/?bust=1703341347&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/2/?bust=1703341347&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/2/?bust=1703341347"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/3/?bust=1703656461&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/3/?bust=1703656461&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/3/?bust=1703656461&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/3/?bust=1703656461"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/4/?bust=1703656461&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/4/?bust=1703656461&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/4/?bust=1703656461&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/4/?bust=1703656461"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/1/?bust=1703341346&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/1/?bust=1703341346&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/1/?bust=1703341346&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70134816/1/?bust=1703341346"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-23T14:22:30+0000",
+      "published_at": "2023-12-23T14:22:28+0000",
+      "distance": 7.4622,
+      "contact": {
+        "email": "ashley@pawsupprogram.com",
+        "phone": "(780) 394-4587",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Edmonton",
+          "state": "AB",
+          "postcode": "T5Y 3N6",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70134816"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab148"
+        }
+      }
+    },
+    {
+      "id": 70120809,
+      "organization_id": "AB135",
+      "url": "https://www.petfinder.com/cat/marbles-70120809/ab/wetaskiwin/wetaskiwin-animal-shelter-ab135/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Domestic Short Hair",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Calico",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": null,
+        "cats": false
+      },
+      "tags": [
+        "Friendly",
+        "Affectionate",
+        "Gentle",
+        "Loves Kisses"
+      ],
+      "name": "Marbles ",
+      "description": "Marbles is about a 10 month old spayed female. She is a very sweet but sassy girl. Marbles has a...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70120809/1/?bust=1703200067&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70120809/1/?bust=1703200067&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70120809/1/?bust=1703200067&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70120809/1/?bust=1703200067"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70120809/1/?bust=1703200067&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70120809/1/?bust=1703200067&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70120809/1/?bust=1703200067&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70120809/1/?bust=1703200067"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-21T23:07:49+0000",
+      "published_at": "2023-12-21T23:07:48+0000",
+      "distance": 40.4352,
+      "contact": {
+        "email": "wetaskiwinpetcentre@gmail.com",
+        "phone": "(780) 352-7006",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "wetaskiwin",
+          "state": "AB",
+          "postcode": "t9a 2j4",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70120809"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab135"
+        }
+      }
+    },
+    {
+      "id": 70081103,
+      "organization_id": "AB135",
+      "url": "https://www.petfinder.com/cat/kerplunk-70081103/ab/wetaskiwin/wetaskiwin-animal-shelter-ab135/?referrer_id=1d52565f-f087-4456-abcc-03c6e9af3bc7&utm_source=api&utm_medium=partnership&utm_content=1d52565f-f087-4456-abcc-03c6e9af3bc7",
+      "type": "Cat",
+      "species": "Cat",
+      "breeds": {
+        "primary": "Domestic Short Hair",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Tabby (Brown / Chocolate)",
+        "secondary": "Tabby (Buff / Tan / Fawn)",
+        "tertiary": "White"
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Large",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": false,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [
+        "Friendly",
+        "Affectionate",
+        "Quiet",
+        "Loves kisses",
+        "Timid",
+        "Gentle"
+      ],
+      "name": "Kerplunk",
+      "description": "Kerplunk is about a 1 year old neutered male. Kerplunk is a quiet and reserved boy. His favorite part of...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70081103/1/?bust=1702932914&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70081103/1/?bust=1702932914&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70081103/1/?bust=1702932914&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70081103/1/?bust=1702932914"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70081103/1/?bust=1702932914&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70081103/1/?bust=1702932914&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70081103/1/?bust=1702932914&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70081103/1/?bust=1702932914"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-18T20:55:24+0000",
+      "published_at": "2023-12-18T20:55:23+0000",
+      "distance": 40.4352,
+      "contact": {
+        "email": "wetaskiwinpetcentre@gmail.com",
+        "phone": "(780) 352-7006",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "wetaskiwin",
+          "state": "AB",
+          "postcode": "t9a 2j4",
+          "country": "CA"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70081103"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        },
+        "organization": {
+          "href": "/v2/organizations/ab135"
         }
       }
     }
+  ],
+  "pagination": {
+    "count_per_page": 20,
+    "total_count": 36,
+    "current_page": 1,
+    "total_pages": 2,
+    "_links": {
+      "next": {
+        "href": "/v2/animals?after=2023-12-01T00:00:00%2B00:00&before=2024-01-01T00:00:00%2B00:00&distance=50&limit=20&location=Edmonton,%20AB&page=2&sort=recent"
+      }
+    }
   }
+}

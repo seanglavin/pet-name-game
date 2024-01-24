@@ -48,7 +48,7 @@ class GetPetFinderDataRequest(BaseModel):
                 "house_trained": True, # Can be true or 1 only
                 "declawed": False, # Can be true or 1 only
                 "special_needs": False, # Can be true or 1 only
-                "location": "New York", # Example: city, state/province, or postal code
+                "location": "New York, NY", # Example: city, state/province; or postal code
                 "distance": 50, # Requires location to be set, max: 500, measured in miles
                 "before": "2023-01-01T00:00:00+00:00", # ISO8601
                 "after": "2022-01-01T00:00:00+00:00", # ISO8601

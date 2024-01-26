@@ -9,6 +9,8 @@ services:
       - db
     env_file:
       - .env
+    volumes:
+      - .:/pet-name-game
     networks:
       - pet_name_game_network
 

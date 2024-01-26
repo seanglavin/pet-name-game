@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String, Boolean, Text, DateTime, Float, JSON
 from typing import List, Optional, Any
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
+from sqlalchemy.dialects.postgresql import ARRAY
 
 
 
@@ -14,15 +15,15 @@ class PetfinderAnimals(Base):
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
     response_data: Mapped[dict[str, Any]]
     type: Mapped[Optional[str]]
-    breed: Mapped[Optional[List[str]]]
-    size: Mapped[Optional[List[str]]]
-    gender: Mapped[Optional[List[str]]]
-    age: Mapped[Optional[List[str]]]
+    breed: Mapped[Optional[List[str]]] = mapped_column(ARRAY(String))
+    size: Mapped[Optional[List[str]]] = mapped_column(ARRAY(String))
+    gender: Mapped[Optional[List[str]]] = mapped_column(ARRAY(String))
+    age: Mapped[Optional[List[str]]] = mapped_column(ARRAY(String))
     color: Mapped[Optional[str]]
-    coat: Mapped[Optional[List[str]]]
-    status: Mapped[Optional[List[str]]]
+    coat: Mapped[Optional[List[str]]] = mapped_column(ARRAY(String))
+    status: Mapped[Optional[List[str]]] = mapped_column(ARRAY(String))
     name: Mapped[Optional[str]]
-    organization: Mapped[Optional[List[str]]]
+    organization: Mapped[Optional[List[str]]] = mapped_column(ARRAY(String))
     good_with_children: Mapped[Optional[bool]]
     good_with_dogs: Mapped[Optional[bool]]
     good_with_cats: Mapped[Optional[bool]]

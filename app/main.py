@@ -5,20 +5,15 @@ from app.database.session import get_db, engine
 from app.config import settings
 from sqlalchemy.orm import Session
 import logging
-from app.database.models import PetfinderAnimals
+from app.database.models import Base
 
 logger = logging.getLogger(__name__)
 
-
 def create_tables():
-    MetaData = PetfinderAnimals.metadata  
-    try:
-        MetaData.create_all(bind=engine)
-        print("Tables created successfully.")
-        logger.info("Tables created successfully.")
-    except Exception as e:
-        print("Error creating tables:", e)
-        logger.info("Error creating tables.")
+    base = Base()
+    base.metadata.create_all(bind=engine)
+    print("Tables created successfully.")
+    logger.info("Tables created successfully.")
 
 def start_application():
     app = FastAPI(title=settings.PROJECT_NAME,

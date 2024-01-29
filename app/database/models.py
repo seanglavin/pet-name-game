@@ -9,7 +9,7 @@ class Base(DeclarativeBase):
     type_annotation_map = {dict[str, Any]: JSON}
 
 
-class PetfinderAnimals(Base):
+class PetfinderAnimalsDataDump(Base):
     __tablename__ = "petfinder_animals"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)

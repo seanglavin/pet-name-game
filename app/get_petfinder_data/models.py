@@ -30,6 +30,7 @@ class GetPetFinderDataRequest(BaseModel):
         return self.model_dump(exclude_unset=True)
 
     class Config:
+        orm_mode = True,
         json_schema_extra = {
             "example": {
                 "type": "cat", #
@@ -57,4 +58,34 @@ class GetPetFinderDataRequest(BaseModel):
                 "limit": 20 # Max: 100
             }
         }
-    
+
+
+class PetfinderAnimalsDataDumpResponse(BaseModel):
+    id: int
+    response_data: dict
+    type: Optional[str]
+    breed: Optional[List[str]]
+    size: Optional[List[str]]
+    gender: Optional[List[str]]
+    age: Optional[List[str]]
+    color: Optional[str]
+    coat: Optional[List[str]]
+    status: Optional[List[str]]
+    name: Optional[str]
+    organization: Optional[List[str]]
+    good_with_children: Optional[bool]
+    good_with_dogs: Optional[bool]
+    good_with_cats: Optional[bool]
+    house_trained: Optional[bool]
+    declawed: Optional[bool]
+    special_needs: Optional[bool]
+    location: Optional[str]
+    distance: int
+    before: Optional[str]
+    after: Optional[str]
+    sort: Optional[str]
+    page: int
+    limit: int
+
+    class Config:
+        orm_mode = True

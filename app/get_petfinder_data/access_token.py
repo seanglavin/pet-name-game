@@ -1,12 +1,11 @@
 import requests
 import httpx
-from dotenv import load_dotenv
-import os
+from app.config import settings
 
-load_dotenv()
 
-PETFINDER_API_KEY = os.getenv("PETFINDER_API_KEY")
-PETFINDER_API_SECRET = os.getenv("PETFINDER_API_SECRET")
+PETFINDER_API_KEY = settings.PETFINDER_API_KEY
+PETFINDER_API_SECRET = settings.PETFINDER_API_SECRET
+
 
 async def get_access_token():
 

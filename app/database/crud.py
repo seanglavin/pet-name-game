@@ -1,8 +1,9 @@
 from sqlalchemy.orm import Session
+from sqlalchemy.ext.asyncio import AsyncSession
 from app.database.models import PetfinderAnimalsDataDump
 from app.get_petfinder_data.models import GetPetFinderDataRequest
 
-def save_petfinder_data(db: Session, response_data: dict, request: GetPetFinderDataRequest):
+async def save_petfinder_data(db: AsyncSession, response_data: dict, request: GetPetFinderDataRequest):
     """
     Save Petfinder data (API response and request parameters) to the database.
 
@@ -41,12 +42,12 @@ def save_petfinder_data(db: Session, response_data: dict, request: GetPetFinderD
 
     # Add the new PetfinderAnimalsDataDump instance to the session and commit the transaction
     db.add(petfinder_animals_dump)
-    db.commit()
-
+    await db.commit()
+    await db.refresh(petfinder_animals_dump)
     return petfinder_animals_dump
 
 
-def get_petfinder_animals(db: Session, limit: int = 100):
+async def get_petfinder_animals(db: AsyncSession, limit: int = 100):
     """
     Retrieve PetfinderAnimalsDataDump from the database.
 
@@ -57,10 +58,11 @@ def get_petfinder_animals(db: Session, limit: int = 100):
     Returns:
         List of PetfinderAnimalsDataDump objects.
     """
-    return db.query(PetfinderAnimalsDataDump).limit(limit).all()
+    response = await db.query(PetfinderAnimalsDataDump).limit(limit).all()
+    return response
 
 
-def get_response_data(db: Session, petfinder_animals_data_dump_id: int):
+async def get_response_data(db: AsyncSession, petfinder_animals_data_dump_id: int):
     """
     Retrieve response data from the saved PetfinderAnimalsDataDump.
 
@@ -71,7 +73,8 @@ def get_response_data(db: Session, petfinder_animals_data_dump_id: int):
     Returns:
         Dictionary containing response data.
     """
-    petfinder_animal = db.query(PetfinderAnimalsDataDump).filter(PetfinderAnimalsDataDump.id == petfinder_animals_data_dump_id).first()
+    petfinder_animal = await db.query(PetfinderAnimalsDataDump).filter(PetfinderAnimalsDataDump.id == petfinder_animals_data_dump_id).first()
     if petfinder_animal:
-        return petfinder_animal.response_data
+        response = petfinder_animal.response_data
+        return response
     return None

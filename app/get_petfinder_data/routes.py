@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends
 from typing import List
 from sqlalchemy.orm import Session
+from sqlalchemy.ext.asyncio import AsyncSession
 from app.database.session import get_db
 from app.get_petfinder_data.get_pets_data import get_pets, validate_model_test_params
 from app.get_petfinder_data.models import PetfinderAnimalsDataDumpResponse
@@ -30,7 +31,7 @@ async def handle_http_response(response):
 
 
 @router.post("/petfinder_animals")
-async def get_and_save_pets_data_dump(db: Session = Depends(get_db)):
+async def get_and_save_pets_data_dump(db: AsyncSession = Depends(get_db)):
     try:
         pets_data = await get_pets()
 
@@ -47,7 +48,7 @@ async def get_and_save_pets_data_dump(db: Session = Depends(get_db)):
     
 
 @router.get("/petfinder_animals/all", response_model=List[PetfinderAnimalsDataDumpResponse])
-async def read_petfinder_animals(limit: int = 100, db: Session = Depends(get_db)):
+async def read_petfinder_animals(limit: int = 100, db: AsyncSession = Depends(get_db)):
     """
     Retrieve all PetfinderAnimalsDataDump entries.
 
@@ -58,11 +59,11 @@ async def read_petfinder_animals(limit: int = 100, db: Session = Depends(get_db)
     Returns:
         List of PetfinderAnimalsDataDump objects.
     """
-    return get_petfinder_animals(db, limit=limit)
+    return await get_petfinder_animals(db, limit=limit)
 
 
 @router.get("/petfinder_animals/{petfinder_animals_data_dump_id}/response_data")
-async def read_response_data(petfinder_animals_data_dump_id: int, db: Session = Depends(get_db)):
+async def read_response_data(petfinder_animals_data_dump_id: int, db: AsyncSession = Depends(get_db)):
     """
     Retrieve response data for a specific PetfinderAnimalsDataDump entry.
 
@@ -73,7 +74,7 @@ async def read_response_data(petfinder_animals_data_dump_id: int, db: Session = 
     Returns:
         Dictionary containing response data.
     """
-    response_data = get_response_data(db, petfinder_animals_data_dump_id)
+    response_data = await get_response_data(db, petfinder_animals_data_dump_id)
     if response_data:
         return response_data
     else:

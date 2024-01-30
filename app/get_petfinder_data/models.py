@@ -26,11 +26,8 @@ class GetPetFinderDataRequest(BaseModel):
     page: Optional[int] = 1
     limit: Optional[int] = 20
 
-    def flatten_params(self):
-        return self.model_dump(exclude_unset=True)
-
     class Config:
-        orm_mode = True,
+        from_attributes = True
         json_schema_extra = {
             "example": {
                 "type": "cat", #
@@ -88,4 +85,4 @@ class PetfinderAnimalsDataDumpResponse(BaseModel):
     limit: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True

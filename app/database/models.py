@@ -1,8 +1,9 @@
-from sqlalchemy import Column, Integer, String, Boolean, Text, DateTime, Float, JSON
-from typing import List, Optional, Any
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
-from sqlalchemy.dialects.postgresql import ARRAY, JSONB
-from sqlmodel import SQLModel, Field, JSON
+from typing import List, Optional, Any, Dict
+from sqlmodel import SQLModel, Field
+from sqlmodel import JSON as sqlmodel_json
+from sqlalchemy import Column, String, ARRAY
+from sqlalchemy.dialects.postgresql import JSONB
+from app.get_petfinder_data.models import GetPetFinderDataRequest
 
 
 
@@ -44,30 +45,30 @@ class PetfinderAnimalsDataDump(SQLModel, table=True):
     __tablename__ = "petfinder_animals"
 
     id: int = Field(primary_key=True, index=True)
-    response_data: JSON = Field(sa_column=Column(JSONB))
-    type: Optional[str]
-    breed: Optional[List[str]]
-    size: Optional[List[str]]
-    gender: Optional[List[str]]
-    age: Optional[List[str]]
-    color: Optional[str]
-    coat: Optional[List[str]]
-    status: Optional[List[str]]
-    name: Optional[str]
-    organization: Optional[List[str]]
-    good_with_children: Optional[bool]
-    good_with_dogs: Optional[bool]
-    good_with_cats: Optional[bool]
-    house_trained: Optional[bool]
-    declawed: Optional[bool]
-    special_needs: Optional[bool]
-    location: Optional[str]
-    distance: int = Field(default=100)
-    before: Optional[str]
-    after: Optional[str]
-    sort: Optional[str] = Field(default="recent")
-    page: int = Field(default=1)
-    limit: int = Field(default=20)
+    response_data: GetPetFinderDataRequest = Field(sa_column=Column(JSONB))
+    type: Optional[str] = None
+    breed: Optional[List[str]] = Field(sa_column=Column(ARRAY(String)))
+    size:  Optional[List[str]] = Field(sa_column=Column(ARRAY(String)))
+    gender: Optional[List[str]] = Field(sa_column=Column(ARRAY(String)))
+    age: Optional[List[str]] = Field(sa_column=Column(ARRAY(String)))
+    color: Optional[str] = None
+    coat: Optional[List[str]] = Field(sa_column=Column(ARRAY(String)))
+    status: Optional[List[str]] = Field(sa_column=Column(ARRAY(String)))
+    name: Optional[str] = None
+    organization: Optional[list[str]] = Field(sa_column=Column(ARRAY(String)))
+    good_with_children: Optional[bool] = None
+    good_with_dogs: Optional[bool] = None
+    good_with_cats: Optional[bool] = None
+    house_trained: Optional[bool] = None
+    declawed: Optional[bool] = None
+    special_needs: Optional[bool] = None
+    location: Optional[str] = None
+    distance: int = 100
+    before: Optional[str] = None
+    after: Optional[str] = None
+    sort: Optional[str] = "recent"
+    page: int = 1
+    limit: int = 20
 
     class Config:
         arbitrary_types_allowed = True

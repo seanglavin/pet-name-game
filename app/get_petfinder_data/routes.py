@@ -5,11 +5,11 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.database.session import get_db
 from app.get_petfinder_data.get_pets_data import get_pets, validate_model_test_params
 from app.get_petfinder_data.models import PetfinderAnimalsDataDumpResponse
-from app.database.crud import save_petfinder_data, get_petfinder_animals, get_response_data
+from app.database.crud import save_petfinder_data, get_petfinder_animals, get_response_data, delete_all_petfinder_data
 from pydantic import ValidationError
 
 
-router = APIRouter(prefix="/get_data", tags=["get_data"])
+router = APIRouter(prefix="/data", tags=["data"])
 
 
 async def handle_http_response(response):
@@ -31,7 +31,7 @@ async def handle_http_response(response):
 
 
 @router.post("/petfinder_animals")
-async def get_and_save_pets_data_dump(db: AsyncSession = Depends(get_db)):
+async def get_and_save_petfinder_data_dump(db: AsyncSession = Depends(get_db)):
     try:
         pets_data = await get_pets()
 
@@ -48,7 +48,7 @@ async def get_and_save_pets_data_dump(db: AsyncSession = Depends(get_db)):
     
 
 @router.get("/petfinder_animals/all", response_model=List[PetfinderAnimalsDataDumpResponse])
-async def read_petfinder_animals(limit: int = 100, db: AsyncSession = Depends(get_db)):
+async def read_petfinder_animals(db: AsyncSession = Depends(get_db)):
     """
     Retrieve all PetfinderAnimalsDataDump entries.
 
@@ -59,7 +59,7 @@ async def read_petfinder_animals(limit: int = 100, db: AsyncSession = Depends(ge
     Returns:
         List of PetfinderAnimalsDataDump objects.
     """
-    return await get_petfinder_animals(db, limit=limit)
+    return await get_petfinder_animals(db)
 
 
 @router.get("/petfinder_animals/{petfinder_animals_data_dump_id}/response_data")
@@ -94,3 +94,9 @@ async def validate_test_params_endpoint():
         error_messages = e.errors()
         error_response = {"error": "Validation Error", "detail": error_messages}
         raise HTTPException(status_code=422, detail=error_response)
+    
+
+@router.delete("/petfinder_animals")
+async def delete_petfinder_data_dump_table_contents(db: AsyncSession = Depends(get_db)):
+    response = await delete_all_petfinder_data(db)
+    return {f"Table entries deleted: {response}"}

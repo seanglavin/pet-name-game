@@ -1,6 +1,6 @@
 {
     "location": "Edmonton, AB",
-    "distance": 50,
+    "distance": 100,
     "before": "2024-01-01T00:00:00+00:00",
     "after": "2023-12-01T00:00:00+00:00",
     "sort": "recent",

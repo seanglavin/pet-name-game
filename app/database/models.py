@@ -45,7 +45,7 @@ class PetfinderAnimalsDataDump(SQLModel, table=True):
     __tablename__ = "petfinder_animals"
 
     id: int = Field(primary_key=True, index=True)
-    response_data: GetPetFinderDataRequest = Field(sa_column=Column(JSONB))
+    response_data: Dict = Field(sa_column=Column(JSONB))
     type: Optional[str] = None
     breed: Optional[List[str]] = Field(sa_column=Column(ARRAY(String)))
     size:  Optional[List[str]] = Field(sa_column=Column(ARRAY(String)))

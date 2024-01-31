@@ -1,3 +1,4 @@
+from sqlalchemy import text
 from sqlalchemy.orm import Session
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.database.models import PetfinderAnimalsDataDump
@@ -47,7 +48,7 @@ async def save_petfinder_data(db: AsyncSession, response_data: dict, request: Ge
     return petfinder_animals_dump
 
 
-async def get_petfinder_animals(db: AsyncSession, limit: int = 100):
+async def get_petfinder_animals(db: AsyncSession):
     """
     Retrieve PetfinderAnimalsDataDump from the database.
 
@@ -58,7 +59,7 @@ async def get_petfinder_animals(db: AsyncSession, limit: int = 100):
     Returns:
         List of PetfinderAnimalsDataDump objects.
     """
-    response = await db.query(PetfinderAnimalsDataDump).limit(limit).all()
+    response = await db.query(PetfinderAnimalsDataDump).all()
     return response
 
 
@@ -78,3 +79,19 @@ async def get_response_data(db: AsyncSession, petfinder_animals_data_dump_id: in
         response = petfinder_animal.response_data
         return response
     return None
+
+
+async def delete_all_petfinder_data(db: AsyncSession):
+    """
+    Delete all entries in the PetFinderAnimalsDataDump table petfinder_animals.
+
+    Args:
+        db: SQLAlchemy database session.
+
+    Returns:
+        # of rows deleted
+    """
+    result = await db.execute(PetfinderAnimalsDataDump.__table__.delete())
+    await db.execute(text("ALTER SEQUENCE petfinder_animals_id_seq RESTART WITH 1"))
+    await db.commit()
+    return result.rowcount

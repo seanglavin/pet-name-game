@@ -5,6 +5,8 @@ from app.database.session import get_db, engine
 from app.config import settings
 import logging
 from app.database.utils import create_db_and_tables
+import asyncio
+
 
 logger = logging.getLogger(__name__)
 
@@ -12,10 +14,11 @@ logger = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # code to execute when app is loading
-    for attr in dir(settings):
-        if not attr.startswith("__"):
-            value = getattr(settings, attr)
-            print(f"{attr}: {value}")
+    # for attr in dir(settings):
+    #     if not attr.startswith("__"):
+    #         value = getattr(settings, attr)
+    #         print(f"{attr}: {value}")
+    await asyncio.sleep(5)
     await create_db_and_tables(engine)
     yield
     # code to execute when app is shutting down

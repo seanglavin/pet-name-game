@@ -1,17 +1,29 @@
 from fastapi import APIRouter, HTTPException, Depends
-from typing import List
-from sqlalchemy.orm import Session
-from sqlalchemy.ext.asyncio import AsyncSession
+from fastapi.responses import JSONResponse
+from typing import List, Dict
+from sqlmodel.ext.asyncio.session import AsyncSession
 from app.database.session import get_db
 from app.get_petfinder_data.get_pets_data import get_pets, validate_model_test_params
-from app.get_petfinder_data.models import PetfinderAnimalsDataDumpResponse
+from app.database.models import PetfinderAnimalsDataDump, PetfinderAnimalsDataDumpResponse, ResponseDataRead
 from app.database.crud import save_petfinder_data, get_petfinder_animals, get_response_data, delete_all_petfinder_data
 from pydantic import ValidationError
+import logging
+from json import JSONEncoder
 
+logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/data", tags=["data"])
 
-
+class CustomJSONEncoder(JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, PetfinderAnimalsDataDump):
+            return {
+                "id": obj.id,
+                "response_data": obj.response_data_str(),
+                # Add other fields as needed
+            }
+        return super().default(obj)
+    
 async def handle_http_response(response):
     """
     Handle HTTP response and return appropriate result.
@@ -40,9 +52,9 @@ async def get_and_save_petfinder_data_dump(db: AsyncSession = Depends(get_db)):
         request_parameters = pets_data.get("request")
 
         # Save pets data to the database
-        saved_data = await save_petfinder_data(db, response_data = api_response_data, request = request_parameters)
-
-        return {"message": "Data saved successfully", "saved_data": saved_data}
+        data = await save_petfinder_data(db, response_data = api_response_data, request = request_parameters)
+        print("Petfinder Data Dumped: Success!")
+        return data
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Internal Server Error: {str(e)}")
     
@@ -59,7 +71,8 @@ async def read_petfinder_animals(db: AsyncSession = Depends(get_db)):
     Returns:
         List of PetfinderAnimalsDataDump objects.
     """
-    return await get_petfinder_animals(db)
+    result = await get_petfinder_animals(db)
+    return result
 
 
 @router.get("/petfinder_animals/{petfinder_animals_data_dump_id}/response_data")
@@ -74,7 +87,7 @@ async def read_response_data(petfinder_animals_data_dump_id: int, db: AsyncSessi
     Returns:
         Dictionary containing response data.
     """
-    response_data = await get_response_data(db, petfinder_animals_data_dump_id)
+    response_data = await get_response_data(petfinder_animals_data_dump_id, db)
     if response_data:
         return response_data
     else:

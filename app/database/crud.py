@@ -1,8 +1,9 @@
-from sqlalchemy import text
-from sqlalchemy.orm import Session
-from sqlalchemy.ext.asyncio import AsyncSession
+# from sqlalchemy import text
+from sqlmodel.ext.asyncio.session import AsyncSession
 from app.database.models import PetfinderAnimalsDataDump
 from app.get_petfinder_data.models import GetPetFinderDataRequest
+from sqlalchemy.orm import load_only
+from sqlmodel import select, text
 
 async def save_petfinder_data(db: AsyncSession, response_data: dict, request: GetPetFinderDataRequest):
     """
@@ -57,13 +58,18 @@ async def get_petfinder_animals(db: AsyncSession):
         limit: Maximum number of records to retrieve.
 
     Returns:
-        List of PetfinderAnimalsDataDump objects.
+        List of PetfinderAnimalsDataDumpResponse objects.
     """
-    response = await db.query(PetfinderAnimalsDataDump).all()
-    return response
+    statement = select(PetfinderAnimalsDataDump)
+    results = await db.exec(statement)
+    if results:
+        data_dumps = results.all()
+        serialized_data_dumps = [dump.model_dump() for dump in data_dumps]
+        return serialized_data_dumps
+    return None
 
 
-async def get_response_data(db: AsyncSession, petfinder_animals_data_dump_id: int):
+async def get_response_data(petfinder_animals_data_dump_id: int, db: AsyncSession):
     """
     Retrieve response data from the saved PetfinderAnimalsDataDump.
 
@@ -74,10 +80,13 @@ async def get_response_data(db: AsyncSession, petfinder_animals_data_dump_id: in
     Returns:
         Dictionary containing response data.
     """
-    petfinder_animal = await db.query(PetfinderAnimalsDataDump).filter(PetfinderAnimalsDataDump.id == petfinder_animals_data_dump_id).first()
-    if petfinder_animal:
-        response = petfinder_animal.response_data
-        return response
+    statement = select(PetfinderAnimalsDataDump).where(PetfinderAnimalsDataDump.id == petfinder_animals_data_dump_id)
+    results = await db.exec(statement)
+    if results:
+        data = results.all()
+        return data[0].response_data
+        # serialized_response_datas = [dump.model_dump() for dump in response_data]
+        # return serialized_response_datas
     return None
 
 
@@ -91,7 +100,7 @@ async def delete_all_petfinder_data(db: AsyncSession):
     Returns:
         # of rows deleted
     """
-    result = await db.execute(PetfinderAnimalsDataDump.__table__.delete())
-    await db.execute(text("ALTER SEQUENCE petfinder_animals_id_seq RESTART WITH 1"))
+    result = await db.exec(PetfinderAnimalsDataDump.__table__.delete())
+    await db.exec(text("ALTER SEQUENCE petfinder_animals_id_seq RESTART WITH 1"))
     await db.commit()
     return result.rowcount

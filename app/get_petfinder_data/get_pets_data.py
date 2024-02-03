@@ -7,23 +7,6 @@ from app.get_petfinder_data.models import GetPetFinderDataRequest
 PETFINDER_API_URL = "https://api.petfinder.com/v2/animals"
 
 
-# ###
-# ### Function for easy testing of different paramaters by editting the petfinder_data_request.json
-# ### 
-# async def load_test_parameters():
-#     """
-#     Load test parameters from the JSON file.
-#     """
-#     with open("app/get_petfinder_data/petfinder_data_request.json", "r") as file:
-#         parameters = json.load(file)
-
-#     # Create an instance of GetPetFinderDataRequest
-#     request_instance = GetPetFinderDataRequest(**parameters)
-
-#     # Return the flattened parameters serializable
-#     return request_instance.model_dump(exclude_unset=True)
-
-
 async def get_pets():
     """
     Load request parameters from the JSON file.

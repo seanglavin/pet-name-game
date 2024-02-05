@@ -9,6 +9,9 @@ class PetfinderAnimalsDataDump(SQLModel, table=True):
     __tablename__ = "petfinder_animals"
 
     id: int = Field(primary_key=True, index=True)
+    request_batch_id: int = Field(index=True)
+    page: int = 1
+    limit: int = 20
     type: Optional[str] = None
     breed: Optional[List[str]] = Field(sa_column=Column(ARRAY(String)))
     size:  Optional[List[str]] = Field(sa_column=Column(ARRAY(String)))
@@ -30,8 +33,6 @@ class PetfinderAnimalsDataDump(SQLModel, table=True):
     before: Optional[str] = None
     after: Optional[str] = None
     sort: Optional[str] = "recent"
-    page: int = 1
-    limit: int = 20
     response_data: Dict = Field(sa_column=Column(JSONB))
          
     class Config:
@@ -40,6 +41,9 @@ class PetfinderAnimalsDataDump(SQLModel, table=True):
 
 class PetfinderAnimalsDataDumpResponse(SQLModel):
     id: int
+    request_batch_id: int = Field(index=True)
+    page: int
+    limit: int
     type: Optional[str]
     breed: Optional[List[str]]
     size: Optional[List[str]]
@@ -61,8 +65,6 @@ class PetfinderAnimalsDataDumpResponse(SQLModel):
     before: Optional[str]
     after: Optional[str]
     sort: Optional[str]
-    page: int
-    limit: int
          
     class Config:
         arbitrary_types_allowed = True

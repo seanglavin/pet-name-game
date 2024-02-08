@@ -1,12 +1,16 @@
 from typing import List, Optional, Any, Dict
-from sqlmodel import SQLModel, Field, Column, String, ARRAY
-# from sqlalchemy import Column, String, ARRAY
+from pydantic import BaseModel
+# from datetime import datetime
+from sqlmodel import SQLModel, Field, Column, String, ARRAY, Relationship
 from sqlalchemy.dialects.postgresql import JSONB
 
 
 
+"""
+Data Dump table and models
+"""
 class PetfinderAnimalsDataDump(SQLModel, table=True):
-    __tablename__ = "petfinder_animals"
+    __tablename__ = "petfinder_animals_raw"
 
     id: int = Field(primary_key=True, index=True)
     request_batch_id: int = Field(index=True)
@@ -34,14 +38,16 @@ class PetfinderAnimalsDataDump(SQLModel, table=True):
     after: Optional[str] = None
     sort: Optional[str] = "recent"
     response_data: Dict = Field(sa_column=Column(JSONB))
+
+    # animals: Optional[List["Animal"]] = Relationship(back_populates="petfinder_animals_data_dump")
          
     class Config:
         arbitrary_types_allowed = True
 
 
-class PetfinderAnimalsDataDumpResponse(SQLModel):
+class PetfinderAnimalsDataDumpResponse(BaseModel):
     id: int
-    request_batch_id: int = Field(index=True)
+    request_batch_id: int
     page: int
     limit: int
     type: Optional[str]
@@ -70,9 +76,82 @@ class PetfinderAnimalsDataDumpResponse(SQLModel):
         arbitrary_types_allowed = True
 
 
-class ResponseDataRead(SQLModel):
-    id: int
-    response_data: Dict = Field(sa_column=Column(JSONB))
-         
-    class Config:
-        arbitrary_types_allowed = True
+
+"""
+Animals table and models
+"""
+class Animal(SQLModel, table=True):
+    __tablename__ = "animals"
+
+    id: int = Field(primary_key=True, index=True)
+    petfinder_id: int = Field(index=True)
+    organization_id: Optional[str]
+    url: Optional[str]
+    type: Optional[str] = Field(index=True)
+    species: Optional[str] = Field(index=True)
+    breeds_primary: Optional[str]
+    breeds_secondary: Optional[str]
+    breeds_mixed: Optional[bool]
+    breeds_unknown: Optional[bool]
+    colors_primary: Optional[str]
+    colors_secondary: Optional[str]
+    colors_tertiary: Optional[str]
+    age: Optional[str]
+    gender: Optional[str]
+    size: Optional[str]
+    coat: Optional[str]
+    # # attributes
+    spayed_neutered: Optional[bool]
+    house_trained: Optional[bool]
+    declawed: Optional[bool]
+    special_needs: Optional[bool]
+    shots_current: Optional[bool]
+    # # environment
+    good_with_children: Optional[bool]
+    good_with_dogs: Optional[bool]
+    good_with_cats: Optional[bool]
+    tags: Optional[List[str]] = Field(sa_column=Column(ARRAY(String)))
+    name: Optional[str] = Field(index=True)
+    description: Optional[str]
+    organization_animal_id: Optional[str]
+    # # photos: List[str]
+    # photo_small: Optional[str]
+    # photo_medium: Optional[str]
+    # photo_large: Optional[str]
+    # photo_full: Optional[str]
+    primary_photo_cropped_small: Optional[str]
+    primary_photo_cropped_medium: Optional[str]
+    primary_photo_cropped_large: Optional[str]
+    primary_photo_cropped_full: Optional[str]
+    # # videos: List[str]
+    status: Optional[str]
+    status_changed_at: Optional[str]
+    published_at: Optional[str]
+    distance: Optional[float]
+    # # contact
+    email: Optional[str]
+    phone: Optional[str]
+    # # address = Address
+    address1: Optional[str]
+    address2: Optional[str]
+    city: Optional[str]
+    state: Optional[str]
+    postcode: Optional[str]
+    country: Optional[str]
+
+    # petfinder_animals_data_dump_id: int = Field(default=None, foreign_key="petfinder_animals_data_dump.id")
+    # petfinder_animals_data_dump: [PetfinderAnimalsDataDump] = Relationship(back_populates="animals")
+
+
+"""
+PetNameGame tables and models
+"""
+class AnimalCard(SQLModel, table=True):
+    __tablename__ = "animal_cards"
+
+    id: int = Field(primary_key=True, index=True)
+    petfinder_id: int = Field(index=True)
+    type: Optional[str]
+    name: Optional[str]
+    gender: Optional[str]
+    primary_photo_cropped_medium: Optional[str]

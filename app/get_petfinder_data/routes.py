@@ -6,8 +6,8 @@ import logging
 
 from app.database.session import get_db
 from app.get_petfinder_data.get_pets_data import get_pets, validate_model_test_params
-from app.database.models import PetfinderAnimalsDataDump, PetfinderAnimalsDataDumpResponse, ResponseDataRead
-from app.database.crud import save_petfinder_data, get_petfinder_animals, get_response_data_by_dump_id, get_response_data_by_batch_id, delete_all_petfinder_data
+from app.database.models import PetfinderAnimalsDataDump, PetfinderAnimalsDataDumpResponse, Animal, AnimalCard
+from app.database.crud import get_petfinder_animals, get_response_data_by_dump_id, get_response_data_by_batch_id, delete_all_petfinder_data, get_animals, delete_all_animal_data, save_animal_from_response_data_by_batch_id, save_animal_cards_from_animals_table, delete_all_animal_cards_data, get_animal_cards
 
 
 logger = logging.getLogger(__name__)
@@ -109,7 +109,82 @@ async def read_response_data_by_batch_id(petfinder_animals_batch_id: int, db: As
         raise HTTPException(status_code=404, detail=f"No animals found for data dump request batch id: {request_batch_id}")
 
 
+@router.post("/animals/{petfinder_animals_batch_id}")
+async def populate_animals_by_batch_id(petfinder_animals_batch_id: int, db: AsyncSession = Depends(get_db)):
+    try:
+        animals = await save_animal_from_response_data_by_batch_id(petfinder_animals_batch_id, db)
+        print("animals table populating: Success!")
+        return animals
+    
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Internal Server Error: {str(e)}")
 
+
+@router.get("/animals", response_model=List[Animal])
+async def read_petfinder_animals(db: AsyncSession = Depends(get_db)):
+    """
+    Retrieve all Animal entries.
+
+    Args:
+        db: SQLAlchemy database session.
+
+    Returns:
+        List of Animal objects.
+    """
+    try:
+        result = await get_animals(db)
+        return result
+    
+    except HTTPException as http_exception:
+        raise http_exception
+    
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Internal Server Error: {str(e)}") 
+    
+
+@router.post("/animal_cards")
+async def populate_animal_cards_from_animals_table(db: AsyncSession = Depends(get_db)):
+    """
+    Retrieve all AnimalCard entries.
+
+    Args:
+        db: SQLAlchemy database session.
+
+    Returns:
+        List of AnimalCard objects.
+    """
+    try:
+        result = await save_animal_cards_from_animals_table(db)
+        print("animal_cards table populating: Success!")
+        return result
+    
+    except HTTPException as http_exception:
+        raise http_exception
+    
+    # except Exception as e:
+    #     raise HTTPException(status_code=500, detail=f"Internal Server Error: {str(e)}") 
+    
+
+@router.get("/animal_cards", response_model=List[AnimalCard])
+async def read_petfinder_animals(db: AsyncSession = Depends(get_db)):
+    """
+    Retrieve all AnimalCard entries.
+
+    Args:
+        db: SQLAlchemy database session.
+
+    Returns:
+        List of AnimalCard objects.
+    """
+    try:
+        result = await get_animal_cards(db)
+        return result
+    
+    except HTTPException as http_exception:
+        raise http_exception
+    
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Internal Server Error: {str(e)}") 
 
 
 @router.get("/validate_test_params")
@@ -127,4 +202,16 @@ async def validate_test_params_endpoint():
 @router.delete("/petfinder_animals_dump")
 async def delete_petfinder_data_dump_table_contents(db: AsyncSession = Depends(get_db)):
     response = await delete_all_petfinder_data(db)
+    return {f"Table entries deleted: {response}"}
+
+
+@router.delete("/animals")
+async def delete_animals_table_contents(db: AsyncSession = Depends(get_db)):
+    response = await delete_all_animal_data(db)
+    return {f"Table entries deleted: {response}"}
+
+
+@router.delete("/animal_cards")
+async def delete_animal_cards_table_contents(db: AsyncSession = Depends(get_db)):
+    response = await delete_all_animal_cards_data(db)
     return {f"Table entries deleted: {response}"}

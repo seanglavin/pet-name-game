@@ -4,7 +4,7 @@ from fastapi import HTTPException
 from app.database.models import PetfinderAnimalsDataDump, Animal, AnimalCard
 from app.get_petfinder_data.models import GetPetFinderDataRequest
 from sqlalchemy.orm import load_only
-from sqlmodel import select, text
+from sqlmodel import select, text, func
 
 
 async def get_largest_request_batch_id(db: AsyncSession) -> int:
@@ -313,25 +313,54 @@ async def save_animal_cards_from_animals_table(db: AsyncSession):
         raise e
     
 
-async def get_animal_cards(db: AsyncSession):
+async def get_animal_cards(db: AsyncSession, name: str = None, type: str = None, gender: str = None):
     """
     Retrieve AnimalCard table from the database.
 
     Args:
         db: SQLAlchemy database session.
-
+        name:   Case insensitive pattern match.
+        type:  
+                Cat, 
+                Dog, 
+                Rabbit, 
+                Horse, 
+                Small & Furry, 
+                Bird, 
+                Scales, Fins & Other, 
+                Barnyard
+        gender:
+                Male, 
+                Female, 
+                Unknown
     Returns:
         List of AnimalCard objects.
     """
-    statement = select(AnimalCard)
-    results = await db.exec(statement)
+    try:
+        statement = select(AnimalCard)
 
-    if results:
+        if name:
+            print(f"name is: {name}")
+            statement = statement.where(func.lower(AnimalCard.name).ilike(f'%{name.lower()}%'))
+            print(f"statement 1 is: {statement}")
+            print("end of statement")
+        if type:
+            statement = statement.where(func.lower(AnimalCard.type) == type.lower())
+        if gender:
+            statement = statement.where(func.lower(AnimalCard.gender) == gender.lower())
+
+        print(f"statement 2 is: {statement}")
+        print("end of statement")
+
+        results = await db.exec(statement)
+
         animals = results.all()
         serialized_animals = [animal.model_dump() for animal in animals]
         return serialized_animals
     
-    return None
+    except Exception as e:
+        print(f"Error retrieving AnimalCards: {e}")
+        return None
 
 
 

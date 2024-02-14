@@ -155,3 +155,12 @@ class AnimalCard(SQLModel, table=True):
     name: Optional[str]
     gender: Optional[str]
     primary_photo_cropped_medium: Optional[str]
+
+
+class GameBoard(SQLModel, table=True):
+    __tablename__ = "game_boards"
+
+    id: int = Field(primary_key=True, index=True)
+    # animals: List[AnimalCard]     make a relation to animal_cards table
+
+

@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, Depends
-from typing import List, Dict
+from typing import List, Dict, Optional
 from sqlmodel.ext.asyncio.session import AsyncSession
 from pydantic import ValidationError
 import logging
@@ -166,7 +166,11 @@ async def populate_animal_cards_from_animals_table(db: AsyncSession = Depends(ge
     
 
 @router.get("/animal_cards", response_model=List[AnimalCard])
-async def read_petfinder_animals(db: AsyncSession = Depends(get_db)):
+async def read_petfinder_animals(db: AsyncSession = Depends(get_db),
+                                 name: Optional[str] = None,
+                                 type: Optional[str] = None,
+                                 gender: Optional[str] = None
+                                 ):
     """
     Retrieve all AnimalCard entries.
 
@@ -177,7 +181,7 @@ async def read_petfinder_animals(db: AsyncSession = Depends(get_db)):
         List of AnimalCard objects.
     """
     try:
-        result = await get_animal_cards(db)
+        result = await get_animal_cards(db, name=name, type=type, gender=gender)
         return result
     
     except HTTPException as http_exception:

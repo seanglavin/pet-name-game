@@ -155,12 +155,17 @@ class AnimalCard(SQLModel, table=True):
     name: Optional[str]
     gender: Optional[str]
     primary_photo_cropped_medium: Optional[str]
+    # game_board_id: Optional[int] = Field(default=None, foreign_key="game_boards.id")
+    # game_board: "GameBoard" = Relationship(back_populates="animals")
 
 
 class GameBoard(SQLModel, table=True):
     __tablename__ = "game_boards"
 
     id: int = Field(primary_key=True, index=True)
-    # animals: List[AnimalCard]     make a relation to animal_cards table
-
-
+    # game_type: Optional[str] = None
+    # animal_type: Optional[str] = None
+    # gender: Optional[str] = None
+    # guesses: Optional[List[AnimalCard]] = []
+    # answer: Optional[List[AnimalCard]] = []
+    # animals: List[AnimalCard] = Relationship(back_populates="game_board")

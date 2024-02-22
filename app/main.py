@@ -19,8 +19,10 @@ async def lifespan(app: FastAPI):
     #     if not attr.startswith("__"):
     #         value = getattr(settings, attr)
     #         print(f"{attr}: {value}")
-    await asyncio.sleep(2)
-    await create_db_and_tables(engine)
+    # await asyncio.sleep(2)
+
+    # # NO LONGER CREATE DB AT STARTUP, USE ALEMBIC
+    # await create_db_and_tables(engine)
     yield
     # code to execute when app is shutting down place under "yield"
 

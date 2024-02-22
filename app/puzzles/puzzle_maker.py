@@ -8,7 +8,7 @@ async def apply_name_filter(animal_cards: AnimalCard) -> List[AnimalCard]:
     filtered_cards = []
 
     name_filter_regex = re.compile('^[a-zA-Z ]+$')
-    exclude_words_regex = re.compile('(adopt|adoption|adopted|foster|courtesy|needs|needed|friend|partner|bonded)')
+    exclude_words_regex = re.compile('(adopt|adoption|adopted|foster|courtesy|needs|needed|friend|partner|bonded|pair|indoor|duo|adult)')
 
     for card in animal_cards:
         if name_filter_regex.match(card.name) and not exclude_words_regex.search(card.name):

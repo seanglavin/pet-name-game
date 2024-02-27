@@ -1,7 +1,7 @@
 from typing import List, Optional, Any, Dict
 from pydantic import BaseModel
 # from datetime import datetime
-from sqlmodel import SQLModel, Field, Column, String, ARRAY, Relationship
+from sqlmodel import SQLModel, Field, Column, String, ARRAY, Relationship, Integer
 from sqlalchemy.dialects.postgresql import JSONB
 
 
@@ -146,6 +146,11 @@ class Animal(SQLModel, table=True):
 """
 PetNameGame tables and models
 """
+class CardBoardLink(SQLModel, table=True):
+    card_id: Optional[int] = Field(default=None, foreign_key="animal_cards.id", primary_key=True)
+    board_id: Optional[int] = Field(default=None, foreign_key="game_boards.id", primary_key=True)
+
+
 class AnimalCard(SQLModel, table=True):
     __tablename__ = "animal_cards"
 
@@ -155,17 +160,17 @@ class AnimalCard(SQLModel, table=True):
     name: Optional[str]
     gender: Optional[str]
     primary_photo_cropped_medium: Optional[str]
-    # game_board_id: Optional[int] = Field(default=None, foreign_key="game_boards.id")
-    # game_board: "GameBoard" = Relationship(back_populates="animals")
+
+    # game_board: Optional["GameBoard"] = Relationship(back_populates="animals", link_model=CardBoardLink)
 
 
 class GameBoard(SQLModel, table=True):
     __tablename__ = "game_boards"
 
     id: int = Field(primary_key=True, index=True)
-    # game_type: Optional[str] = None
-    # animal_type: Optional[str] = None
-    # gender: Optional[str] = None
-    # guesses: Optional[List[AnimalCard]] = []
-    # answer: Optional[List[AnimalCard]] = []
-    # animals: List[AnimalCard] = Relationship(back_populates="game_board")
+    game_type: Optional[str] = None
+    animal_type: Optional[str] = None
+    gender: Optional[str] = None
+    # answer: Optional[List[AnimalCard]] = Field(sa_column=Column(ARRAY(AnimalCard)))
+
+    # animals: List[AnimalCard] = Relationship(back_populates="game_board", link_model=CardBoardLink)

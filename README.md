@@ -4,7 +4,7 @@ Access PostgreSQL shell:
 
 Exit shell:
     \q
-s
+
 
 Commands container from the terminal:
-    docker exec -it pet-name-game_fastapi_1 [alembic revision --autogenerate -m "init"]
+    docker exec -it pet-name-game-fastapi-1 [alembic revision --autogenerate -m "init"]

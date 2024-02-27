@@ -1,12 +1,12 @@
 from fastapi import APIRouter, HTTPException, Depends
-from typing import List, Dict, Optional
+from typing import List, Optional
 from sqlmodel.ext.asyncio.session import AsyncSession
 from pydantic import ValidationError
 import logging
 
 from app.database.session import get_db
 from app.get_petfinder_data.get_pets_data import get_pets, validate_model_test_params
-from app.database.models import PetfinderAnimalsDataDump, PetfinderAnimalsDataDumpResponse, Animal, AnimalCard
+from app.database.models import PetfinderAnimalsDataDumpResponse, Animal, AnimalCard
 from app.database.crud import get_petfinder_animals, get_response_data_by_dump_id, get_response_data_by_batch_id, delete_all_petfinder_data, get_animals, delete_all_animal_data, save_animal_from_response_data_by_batch_id, save_animal_cards_from_animals_table, delete_all_animal_cards_data, get_animal_cards
 
 

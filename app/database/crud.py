@@ -1,9 +1,8 @@
 # from sqlalchemy import text
 from sqlmodel.ext.asyncio.session import AsyncSession
 from fastapi import HTTPException
-from app.database.models import PetfinderAnimalsDataDump, Animal, AnimalCard
+from app.database.models import PetfinderAnimalsDataDump, Animal, AnimalCard, GameBoard
 from app.get_petfinder_data.models import GetPetFinderDataRequest
-from sqlalchemy.orm import load_only
 from sqlmodel import select, text, func
 
 

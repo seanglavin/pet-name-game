@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Depends
 from contextlib import asynccontextmanager
 from app.get_petfinder_data.routes import router as get_pets_data_router
+from app.puzzles.routes import router as get_puzzles_router
 from app.database.session import get_db, engine
 from sqlmodel.ext.asyncio.session import AsyncSession
 from app.config import settings
@@ -36,6 +37,7 @@ app = FastAPI(
 
 
 app.include_router(get_pets_data_router)
+app.include_router(get_puzzles_router)
 
 
 @app.get("/", tags=["health"])

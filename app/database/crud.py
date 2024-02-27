@@ -4,6 +4,7 @@ from fastapi import HTTPException
 from app.database.models import PetfinderAnimalsDataDump, Animal, AnimalCard, GameBoard
 from app.get_petfinder_data.models import GetPetFinderDataRequest
 from sqlmodel import select, text, func
+from typing import List
 
 
 async def get_largest_request_batch_id(db: AsyncSession) -> int:
@@ -148,6 +149,36 @@ async def save_animal_card(db: AsyncSession, animal_data: dict):
         await db.commit()
         await db.refresh(animal_card)
         return animal_card
+    except Exception as e:
+        await db.rollback()
+        raise e
+    
+
+async def save_game_boards(db: AsyncSession, game_board_data: List[GameBoard]):
+    """
+    Save list of GameBards to the database.
+    """
+    # try:
+    #     game_board = GameBoard(
+    #         game_type = game_board_data["game_type"],
+    #         animal_type = game_board_data["animal_type"],
+    #         gender = game_board_data["gender"],
+    #         answer = game_board_data["answer"],
+    #         animals = game_board_data["animals"]
+    #     )
+
+    #     db.add(game_board)
+
+    #     await db.commit()
+    #     await db.refresh(game_board)
+    #     return game_board
+    try:
+        # bulk insert
+        db.add_all(game_board_data)
+        await db.commit()
+        # no db.refresh() when doing bulk insert.
+        # await db.refresh(game_board_data)
+        return {"GameBoards loaded: ", len(game_board_data)}
     except Exception as e:
         await db.rollback()
         raise e
@@ -339,17 +370,11 @@ async def get_animal_cards(db: AsyncSession, name: str = None, type: str = None,
         statement = select(AnimalCard)
 
         if name:
-            print(f"name is: {name}")
             statement = statement.where(func.lower(AnimalCard.name).ilike(f'%{name.lower()}%'))
-            print(f"statement 1 is: {statement}")
-            print("end of statement")
         if type:
             statement = statement.where(func.lower(AnimalCard.type) == type.lower())
         if gender:
             statement = statement.where(func.lower(AnimalCard.gender) == gender.lower())
-
-        print(f"statement 2 is: {statement}")
-        print("end of statement")
 
         results = await db.exec(statement)
 
@@ -360,6 +385,25 @@ async def get_animal_cards(db: AsyncSession, name: str = None, type: str = None,
     except Exception as e:
         print(f"Error retrieving AnimalCards: {e}")
         return None
+    
+
+async def get_all_game_boards(db: AsyncSession):
+    """
+    Retrieve GameBoards from game_board table from the database.
+
+    Args:
+        db: SQLAlchemy database session.
+
+    Returns:
+        List of GameBoard objects.
+    """
+    statement = select(GameBoard)
+    results = await db.exec(statement)
+    if results:
+        data_dumps = results.all()
+        serialized_data_dumps = [dump.model_dump() for dump in data_dumps]
+        return serialized_data_dumps
+    return None
 
 
 
@@ -407,5 +451,21 @@ async def delete_all_animal_cards_data(db: AsyncSession):
     """
     result = await db.exec(AnimalCard.__table__.delete())
     await db.exec(text("ALTER SEQUENCE animal_cards_id_seq RESTART WITH 1"))
+    await db.commit()
+    return result.rowcount
+
+
+async def delete_all_game_boards_data(db: AsyncSession):
+    """
+    Delete all entries in the GameBoard table.
+
+    Args:
+        db: SQLAlchemy database session.
+
+    Returns:
+        # of rows deleted
+    """
+    result = await db.exec(GameBoard.__table__.delete())
+    await db.exec(text("ALTER SEQUENCE game_boards_id_seq RESTART WITH 1"))
     await db.commit()
     return result.rowcount

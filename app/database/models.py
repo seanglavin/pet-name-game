@@ -3,6 +3,7 @@ from pydantic import BaseModel
 # from datetime import datetime
 from sqlmodel import SQLModel, Field, Column, String, ARRAY, Relationship, Integer
 from sqlalchemy.dialects.postgresql import JSONB
+import random
 
 
 
@@ -146,11 +147,6 @@ class Animal(SQLModel, table=True):
 """
 PetNameGame tables and models
 """
-class CardBoardLink(SQLModel, table=True):
-    card_id: Optional[int] = Field(default=None, foreign_key="animal_cards.id", primary_key=True)
-    board_id: Optional[int] = Field(default=None, foreign_key="game_boards.id", primary_key=True)
-
-
 class AnimalCard(SQLModel, table=True):
     __tablename__ = "animal_cards"
 
@@ -161,8 +157,6 @@ class AnimalCard(SQLModel, table=True):
     gender: Optional[str]
     primary_photo_cropped_medium: Optional[str]
 
-    # game_board: Optional["GameBoard"] = Relationship(back_populates="animals", link_model=CardBoardLink)
-
 
 class GameBoard(SQLModel, table=True):
     __tablename__ = "game_boards"
@@ -171,6 +165,11 @@ class GameBoard(SQLModel, table=True):
     game_type: Optional[str] = None
     animal_type: Optional[str] = None
     gender: Optional[str] = None
-    # answer: Optional[List[AnimalCard]] = Field(sa_column=Column(ARRAY(AnimalCard)))
+    answer: Optional[List[int]] = Field(sa_column=Column(ARRAY(Integer)))
+    animals: Optional[List[int]] = Field(sa_column=Column(ARRAY(Integer)))
 
-    # animals: List[AnimalCard] = Relationship(back_populates="game_board", link_model=CardBoardLink)
+    # @classmethod
+    # def create_gameboard_with_answer(cls, animal_cards: List[AnimalCard]) -> "GameBoard":
+    #     selected_cards = random.sample(animal_cards, 5)
+    #     answer = [card.id for card in selected_cards]
+    #     return cls(answer=answer)

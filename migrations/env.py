@@ -11,7 +11,7 @@ from app.config import settings
 
 DATABASE_URL = settings.DATABASE_URL
 
-from app.database.models import PetfinderAnimalsDataDump, Animal, AnimalCard, GameBoard, CardBoardLink
+from app.database.models import PetfinderAnimalsDataDump, Animal, AnimalCard, GameBoard
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

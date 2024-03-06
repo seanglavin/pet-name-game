@@ -1,10 +1,11 @@
 # from sqlalchemy import text
 from sqlmodel.ext.asyncio.session import AsyncSession
 from fastapi import HTTPException
-from app.database.models import PetfinderAnimalsDataDump, Animal, AnimalCard, GameBoard
+from app.database.models import PetfinderAnimalsDataDump, Animal, AnimalCard, GameBoard, GameBoardWithAnimals
 from app.get_petfinder_data.models import GetPetFinderDataRequest
-from sqlmodel import select, text, func
+from sqlmodel import select, text, func, cast, ARRAY, Integer
 from typing import List
+import json
 
 
 async def get_largest_request_batch_id(db: AsyncSession) -> int:
@@ -158,20 +159,6 @@ async def save_game_boards(db: AsyncSession, game_board_data: List[GameBoard]):
     """
     Save list of GameBards to the database.
     """
-    # try:
-    #     game_board = GameBoard(
-    #         game_type = game_board_data["game_type"],
-    #         animal_type = game_board_data["animal_type"],
-    #         gender = game_board_data["gender"],
-    #         answer = game_board_data["answer"],
-    #         animals = game_board_data["animals"]
-    #     )
-
-    #     db.add(game_board)
-
-    #     await db.commit()
-    #     await db.refresh(game_board)
-    #     return game_board
     try:
         # bulk insert
         db.add_all(game_board_data)
@@ -387,7 +374,25 @@ async def get_animal_cards(db: AsyncSession, name: str = None, type: str = None,
         return None
     
 
-async def get_all_game_boards(db: AsyncSession):
+async def get_animal_cards_by_list_of_card_ids(db: AsyncSession, ids: List[int]) -> List[AnimalCard]:
+    """
+    Retrieve AnimalCard objects by list of card ids.
+    """
+    try:
+        statement = select(AnimalCard).where(AnimalCard.id.in_(ids))
+        results = await db.exec(statement)
+        return results.all()
+    except Exception as e:
+        raise e
+      
+
+async def get_all_game_boards(
+    db: AsyncSession,
+    id: int = None,
+    game_type: str = None,
+    animal_type: str = None,
+    gender: str = None
+    ) -> List[GameBoardWithAnimals]:
     """
     Retrieve GameBoards from game_board table from the database.
 
@@ -397,14 +402,88 @@ async def get_all_game_boards(db: AsyncSession):
     Returns:
         List of GameBoard objects.
     """
-    statement = select(GameBoard)
-    results = await db.exec(statement)
-    if results:
-        data_dumps = results.all()
-        serialized_data_dumps = [dump.model_dump() for dump in data_dumps]
-        return serialized_data_dumps
-    return None
 
+    try:
+        print("PRINTING")
+        print(GameBoard.animals)
+        statement = select(GameBoard, AnimalCard).join(AnimalCard, AnimalCard.id.in_(GameBoard.animals))
+
+        if id is not None:
+            statement = statement.where(GameBoard.id == id)
+        if game_type is not None:
+            statement = statement.where(func.lower(GameBoard.game_type) == game_type.lower())
+        if animal_type is not None:
+            statement = statement.where(func.lower(GameBoard.animal_type) == animal_type.lower())
+        if gender is not None:
+            statement = statement.where(func.lower(GameBoard.gender) == gender.lower())
+
+        results = await db.exec(statement)
+        game_boards = results.all()
+
+        game_boards_with_animals = []
+        for game_board, animal_card in game_boards:
+            if game_board.id not in game_boards_with_animals:
+                game_boards_with_animals[game_board.id] = GameBoardWithAnimals(**game_board.model_dump(), animals_data=[])
+            game_boards_with_animals[game_board.id].animals_data.append(animal_card)
+
+        return game_boards_with_animals
+    
+    except Exception as e:
+        raise e
+
+async def test_get_all_game_boards(
+    db: AsyncSession,
+    id: int = None,
+    game_type: str = None,
+    animal_type: str = None,
+    gender: str = None
+    ) -> List[GameBoardWithAnimals]:
+    """
+    Retrieve GameBoards from game_board table from the database.
+
+    Args:
+        db: SQLAlchemy database session.
+
+    Returns:
+        List of GameBoard objects.
+    """
+
+    try:
+        print("PRINTING 2")
+        
+        statement = select(GameBoard)
+        
+        if id is not None:
+            statement = statement.where(GameBoard.id == id)
+        if game_type is not None:
+            statement = statement.where(func.lower(GameBoard.game_type) == game_type.lower())
+        if animal_type is not None:
+            statement = statement.where(func.lower(GameBoard.animal_type) == animal_type.lower())
+        if gender is not None:
+            statement = statement.where(func.lower(GameBoard.gender) == gender.lower())
+
+        results = await db.exec(statement.order_by(GameBoard.id.asc()))
+        game_boards = results.all()
+
+        all_animal_card_ids = []
+
+        for game_board in game_boards:
+            all_animal_card_ids.extend(game_board.animals)
+
+        animal_cards = await get_animal_cards_by_list_of_card_ids(db=db, ids=all_animal_card_ids)
+        animal_cards_map = {card.id: card for card in animal_cards}
+
+
+        game_boards_with_animals = []
+
+        for game_board in game_boards:
+            animal_cards_data = {animal_card_id: animal_cards_map[animal_card_id] for animal_card_id in game_board.animals if animal_card_id in animal_cards_map}
+            game_board_with_animals = GameBoardWithAnimals(**game_board.model_dump(), animals_data = animal_cards_data)
+            game_boards_with_animals.append(game_board_with_animals)
+
+        return game_boards_with_animals
+    except Exception as e:
+        raise e
 
 
 async def delete_all_petfinder_data(db: AsyncSession):

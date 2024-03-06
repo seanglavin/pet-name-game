@@ -168,8 +168,12 @@ class GameBoard(SQLModel, table=True):
     answer: Optional[List[int]] = Field(sa_column=Column(ARRAY(Integer)))
     animals: Optional[List[int]] = Field(sa_column=Column(ARRAY(Integer)))
 
-    # @classmethod
-    # def create_gameboard_with_answer(cls, animal_cards: List[AnimalCard]) -> "GameBoard":
-    #     selected_cards = random.sample(animal_cards, 5)
-    #     answer = [card.id for card in selected_cards]
-    #     return cls(answer=answer)
+
+class GameBoardWithAnimals(BaseModel):
+    id: int
+    game_type: Optional[str]
+    animal_type: Optional[str]
+    gender: Optional[str]
+    answer: Optional[List[int]]
+    animals: Optional[List[int]]
+    animals_data: Optional[Dict[int, AnimalCard]]

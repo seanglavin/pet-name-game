@@ -40,47 +40,11 @@ async def create_game_boards(db: AsyncSession = Depends(get_db),
         raise e
     
 
-# @router.get("/game_boards", response_model=List[GameBoard])
-# async def read_all_game_boards(db: AsyncSession = Depends(get_db)):
-#     try:
-#         result = await get_all_game_boards(db)
-#         response = result
-#         return response
-    
-#     except HTTPException as http_exception:
-#         raise http_exception
-    
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=f"Internal Server Error: {str(e)}")
-
-
 @router.get("/game_boards", response_model=List[GameBoardWithAnimals])
-async def read_all_game_boards(
-    db: AsyncSession = Depends(get_db),
-    id: Optional[int] = None,
-    game_type: Optional[str] = None,
-    animal_type: Optional[str] = None,
-    gender: Optional[str] = None
-    ):
-    
-    try:
-        result = await get_all_game_boards(
-            db, id = id, game_type = game_type, animal_type = animal_type, gender = gender
-            )
-        return result
- 
-    except HTTPException as http_exception:
-        raise http_exception
-    
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Internal Server Error: {str(e)}") 
-
-
-@router.get("/test/game_boards", response_model=List[GameBoardWithAnimals])
-async def test_read_all_game_boards(db: AsyncSession = Depends(get_db)):
+async def read_all_game_boards(db: AsyncSession = Depends(get_db)):
 
     try:
-        result = await test_get_all_game_boards(db)
+        result = await get_all_game_boards(db)
         return result
  
     except HTTPException as http_exception:
@@ -90,7 +54,24 @@ async def test_read_all_game_boards(db: AsyncSession = Depends(get_db)):
         raise HTTPException(status_code=500, detail=f"Internal Server Error: {str(e)}")
     
 
+@router.get("/game_boards/{id}", response_model=List[GameBoardWithAnimals])
+async def read_game_board_by_id(
+    db: AsyncSession = Depends(get_db),
+    id: Optional[int] = None
+    ):
+    
+    try:
+        result = await get_all_game_boards(db, id = id)
+        return result
+ 
+    except HTTPException as http_exception:
+        raise http_exception
+    
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Internal Server Error: {str(e)}") 
 
+
+    
 
 
 

@@ -386,7 +386,7 @@ async def get_animal_cards_by_list_of_card_ids(db: AsyncSession, ids: List[int])
         raise e
       
 
-async def get_all_game_boards(
+async def test_get_all_game_boards(
     db: AsyncSession,
     id: int = None,
     game_type: str = None,
@@ -404,7 +404,6 @@ async def get_all_game_boards(
     """
 
     try:
-        print("PRINTING")
         print(GameBoard.animals)
         statement = select(GameBoard, AnimalCard).join(AnimalCard, AnimalCard.id.in_(GameBoard.animals))
 
@@ -431,7 +430,8 @@ async def get_all_game_boards(
     except Exception as e:
         raise e
 
-async def test_get_all_game_boards(
+
+async def get_all_game_boards(
     db: AsyncSession,
     id: int = None,
     game_type: str = None,
@@ -448,9 +448,7 @@ async def test_get_all_game_boards(
         List of GameBoard objects.
     """
 
-    try:
-        print("PRINTING 2")
-        
+    try: 
         statement = select(GameBoard)
         
         if id is not None:
